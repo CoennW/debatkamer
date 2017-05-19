@@ -24,6 +24,7 @@
 		DB979F3EDB224B847439584C /* Pods_debatkamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBFC775A51D71E7FAF7FDBF /* Pods_debatkamer.framework */; };
 		ECE5F9948BB4DF8483B10C19 /* Pods_debatkamerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCDAC5EDD81EC9C2F59DB5C /* Pods_debatkamerUITests.framework */; };
 		F5400EF61ECF145500612A42 /* VotePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5400EF51ECF145500612A42 /* VotePageVC.swift */; };
+		F5400EF81ECF252700612A42 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5400EF71ECF252700612A42 /* FeedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		EBBFC775A51D71E7FAF7FDBF /* Pods_debatkamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_debatkamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCDAC5EDD81EC9C2F59DB5C /* Pods_debatkamerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_debatkamerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5400EF51ECF145500612A42 /* VotePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotePageVC.swift; sourceTree = "<group>"; };
+		F5400EF71ECF252700612A42 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		F5400EF91ECF260800612A42 /* debatkamer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "debatkamer-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				2B69E0831ECEEE12007C51C5 /* AppDelegate.swift */,
+				F5400EF71ECF252700612A42 /* FeedTableViewController.swift */,
 				2B83CBC41EC5B07F00D04D5F /* Main.storyboard */,
 				2B83CBC71EC5B07F00D04D5F /* Assets.xcassets */,
 				2B83CBC91EC5B07F00D04D5F /* LaunchScreen.storyboard */,
@@ -145,6 +149,7 @@
 				2B83CBF51EC5CD8F00D04D5F /* AccountVC.swift */,
 				2B69E0811ECEEE05007C51C5 /* PageVC.swift */,
 				2B69E0851ECEF6E5007C51C5 /* GoogleService-Info.plist */,
+				F5400EF91ECF260800612A42 /* debatkamer-Bridging-Header.h */,
 				2B5464471ECEFDF8001E55B4 /* ViewControllers */,
 				2B83CC151EC5F1E100D04D5F /* Tutorial scherm */,
 				2B83CBF21EC5C19B00D04D5F /* Lettertype */,
@@ -287,6 +292,7 @@
 				TargetAttributes = {
 					2B83CBBC1EC5B07F00D04D5F = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					2B83CBD01EC5B07F00D04D5F = {
@@ -498,6 +504,7 @@
 				2B83CC141EC5F1AC00D04D5F /* InterestCollectionViewCell.swift in Sources */,
 				2B83CBF61EC5CD8F00D04D5F /* AccountVC.swift in Sources */,
 				2B83CC131EC5F1AC00D04D5F /* Interest.swift in Sources */,
+				F5400EF81ECF252700612A42 /* FeedTableViewController.swift in Sources */,
 				2B69E0821ECEEE05007C51C5 /* PageVC.swift in Sources */,
 				2B83CBF41EC5C31E00D04D5F /* LoginVC.swift in Sources */,
 				2B83CC121EC5F1AC00D04D5F /* InterestsViewController.swift in Sources */,
@@ -656,12 +663,15 @@
 			baseConfigurationReference = 27A2151ADE19020FE1472C3E /* Pods-debatkamer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = debatkamer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ruudslagers.debatkamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "debatkamer/debatkamer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -672,12 +682,14 @@
 			baseConfigurationReference = CDC82FE38BB388823AA24262 /* Pods-debatkamer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = debatkamer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ruudslagers.debatkamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "debatkamer/debatkamer-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

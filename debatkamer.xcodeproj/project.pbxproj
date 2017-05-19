@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290C5F63AFFB79F3553DBCD1 /* Pods_debatkamerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7172DE48F9B3294EEB8E99 /* Pods_debatkamerTests.framework */; };
 		2B69E0821ECEEE05007C51C5 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B69E0811ECEEE05007C51C5 /* PageVC.swift */; };
 		2B69E0841ECEEE12007C51C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B69E0831ECEEE12007C51C5 /* AppDelegate.swift */; };
+		2B69E0861ECEF6E5007C51C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B69E0851ECEF6E5007C51C5 /* GoogleService-Info.plist */; };
 		2B83CBC61EC5B07F00D04D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B83CBC41EC5B07F00D04D5F /* Main.storyboard */; };
 		2B83CBC81EC5B07F00D04D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B83CBC71EC5B07F00D04D5F /* Assets.xcassets */; };
 		2B83CBCB1EC5B07F00D04D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B83CBC91EC5B07F00D04D5F /* LaunchScreen.storyboard */; };
@@ -19,6 +21,8 @@
 		2B83CC121EC5F1AC00D04D5F /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CC0F1EC5F1AC00D04D5F /* InterestsViewController.swift */; };
 		2B83CC131EC5F1AC00D04D5F /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CC101EC5F1AC00D04D5F /* Interest.swift */; };
 		2B83CC141EC5F1AC00D04D5F /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CC111EC5F1AC00D04D5F /* InterestCollectionViewCell.swift */; };
+		DB979F3EDB224B847439584C /* Pods_debatkamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBFC775A51D71E7FAF7FDBF /* Pods_debatkamer.framework */; };
+		ECE5F9948BB4DF8483B10C19 /* Pods_debatkamerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCDAC5EDD81EC9C2F59DB5C /* Pods_debatkamerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27A2151ADE19020FE1472C3E /* Pods-debatkamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debatkamer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-debatkamer/Pods-debatkamer.debug.xcconfig"; sourceTree = "<group>"; };
 		2B69E0811ECEEE05007C51C5 /* PageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		2B69E0831ECEEE12007C51C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B69E0851ECEF6E5007C51C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2B83CBBD1EC5B07F00D04D5F /* debatkamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = debatkamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B83CBC51EC5B07F00D04D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B83CBC71EC5B07F00D04D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +63,14 @@
 		2B83CC0F1EC5F1AC00D04D5F /* InterestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
 		2B83CC101EC5F1AC00D04D5F /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		2B83CC111EC5F1AC00D04D5F /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A7172DE48F9B3294EEB8E99 /* Pods_debatkamerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_debatkamerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A49EB919EE2D807606FDB8 /* Pods-debatkamerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debatkamerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-debatkamerUITests/Pods-debatkamerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FAF3CE1D51FD9C79C902C69 /* Pods-debatkamerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debatkamerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-debatkamerTests/Pods-debatkamerTests.release.xcconfig"; sourceTree = "<group>"; };
+		CCB5B334E850D87A229426C6 /* Pods-debatkamerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debatkamerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-debatkamerTests/Pods-debatkamerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDC82FE38BB388823AA24262 /* Pods-debatkamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debatkamer.release.xcconfig"; path = "Pods/Target Support Files/Pods-debatkamer/Pods-debatkamer.release.xcconfig"; sourceTree = "<group>"; };
+		D19DC4762DA744B9C816EB92 /* Pods-debatkamerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debatkamerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-debatkamerUITests/Pods-debatkamerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EBBFC775A51D71E7FAF7FDBF /* Pods_debatkamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_debatkamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDCDAC5EDD81EC9C2F59DB5C /* Pods_debatkamerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_debatkamerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB979F3EDB224B847439584C /* Pods_debatkamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290C5F63AFFB79F3553DBCD1 /* Pods_debatkamerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +94,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE5F9948BB4DF8483B10C19 /* Pods_debatkamerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5464471ECEFDF8001E55B4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B83CBF31EC5C31E00D04D5F /* LoginVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		2B83CBB41EC5B07E00D04D5F = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +116,8 @@
 				2B83CBD41EC5B07F00D04D5F /* debatkamerTests */,
 				2B83CBDF1EC5B07F00D04D5F /* debatkamerUITests */,
 				2B83CBBE1EC5B07F00D04D5F /* Products */,
+				69CD6A7BDB296AEC6D4BA261 /* Pods */,
+				45DFC4C4B2A82295F9561B3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +134,7 @@
 		2B83CBBF1EC5B07F00D04D5F /* debatkamer */ = {
 			isa = PBXGroup;
 			children = (
+				2B5464471ECEFDF8001E55B4 /* ViewControllers */,
 				2B83CC151EC5F1E100D04D5F /* Tutorial scherm */,
 				2B83CBF21EC5C19B00D04D5F /* Lettertype */,
 				2B69E0831ECEEE12007C51C5 /* AppDelegate.swift */,
@@ -114,9 +142,9 @@
 				2B83CBC71EC5B07F00D04D5F /* Assets.xcassets */,
 				2B83CBC91EC5B07F00D04D5F /* LaunchScreen.storyboard */,
 				2B83CBCC1EC5B07F00D04D5F /* Info.plist */,
-				2B83CBF31EC5C31E00D04D5F /* LoginVC.swift */,
 				2B83CBF51EC5CD8F00D04D5F /* AccountVC.swift */,
 				2B69E0811ECEEE05007C51C5 /* PageVC.swift */,
+				2B69E0851ECEF6E5007C51C5 /* GoogleService-Info.plist */,
 			);
 			path = debatkamer;
 			sourceTree = "<group>";
@@ -156,6 +184,29 @@
 			name = "Tutorial scherm";
 			sourceTree = "<group>";
 		};
+		45DFC4C4B2A82295F9561B3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBBFC775A51D71E7FAF7FDBF /* Pods_debatkamer.framework */,
+				3A7172DE48F9B3294EEB8E99 /* Pods_debatkamerTests.framework */,
+				EDCDAC5EDD81EC9C2F59DB5C /* Pods_debatkamerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69CD6A7BDB296AEC6D4BA261 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27A2151ADE19020FE1472C3E /* Pods-debatkamer.debug.xcconfig */,
+				CDC82FE38BB388823AA24262 /* Pods-debatkamer.release.xcconfig */,
+				CCB5B334E850D87A229426C6 /* Pods-debatkamerTests.debug.xcconfig */,
+				9FAF3CE1D51FD9C79C902C69 /* Pods-debatkamerTests.release.xcconfig */,
+				67A49EB919EE2D807606FDB8 /* Pods-debatkamerUITests.debug.xcconfig */,
+				D19DC4762DA744B9C816EB92 /* Pods-debatkamerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B83CBE51EC5B07F00D04D5F /* Build configuration list for PBXNativeTarget "debatkamer" */;
 			buildPhases = (
+				2A05229185DDAD8490F15792 /* [CP] Check Pods Manifest.lock */,
 				2B83CBB91EC5B07F00D04D5F /* Sources */,
 				2B83CBBA1EC5B07F00D04D5F /* Frameworks */,
 				2B83CBBB1EC5B07F00D04D5F /* Resources */,
+				4FE52AFD4CAC07E946529D18 /* [CP] Embed Pods Frameworks */,
+				07DC196252CD2BC20ADF327D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B83CBE81EC5B07F00D04D5F /* Build configuration list for PBXNativeTarget "debatkamerTests" */;
 			buildPhases = (
+				6FF8A17251A0823C1DE15134 /* [CP] Check Pods Manifest.lock */,
 				2B83CBCD1EC5B07F00D04D5F /* Sources */,
 				2B83CBCE1EC5B07F00D04D5F /* Frameworks */,
 				2B83CBCF1EC5B07F00D04D5F /* Resources */,
+				4E8FA200DB8883E91C4CA95F /* [CP] Embed Pods Frameworks */,
+				8FC14AB09AD67541BE7DE18E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B83CBEB1EC5B07F00D04D5F /* Build configuration list for PBXNativeTarget "debatkamerUITests" */;
 			buildPhases = (
+				C122F4499CEA7BD8548770CE /* [CP] Check Pods Manifest.lock */,
 				2B83CBD81EC5B07F00D04D5F /* Sources */,
 				2B83CBD91EC5B07F00D04D5F /* Frameworks */,
 				2B83CBDA1EC5B07F00D04D5F /* Resources */,
+				88F27F164A45316695B5E07F /* [CP] Embed Pods Frameworks */,
+				8151EDF301B9B3895B025CE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B83CBCB1EC5B07F00D04D5F /* LaunchScreen.storyboard in Resources */,
+				2B69E0861ECEF6E5007C51C5 /* GoogleService-Info.plist in Resources */,
 				2B83CBC81EC5B07F00D04D5F /* Assets.xcassets in Resources */,
 				2B83CBC61EC5B07F00D04D5F /* Main.storyboard in Resources */,
 			);
@@ -286,6 +347,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07DC196252CD2BC20ADF327D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-debatkamer/Pods-debatkamer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A05229185DDAD8490F15792 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E8FA200DB8883E91C4CA95F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-debatkamerTests/Pods-debatkamerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FE52AFD4CAC07E946529D18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-debatkamer/Pods-debatkamer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FF8A17251A0823C1DE15134 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8151EDF301B9B3895B025CE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-debatkamerUITests/Pods-debatkamerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88F27F164A45316695B5E07F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-debatkamerUITests/Pods-debatkamerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FC14AB09AD67541BE7DE18E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-debatkamerTests/Pods-debatkamerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C122F4499CEA7BD8548770CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B83CBB91EC5B07F00D04D5F /* Sources */ = {
@@ -450,6 +649,7 @@
 		};
 		2B83CBE61EC5B07F00D04D5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27A2151ADE19020FE1472C3E /* Pods-debatkamer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -465,6 +665,7 @@
 		};
 		2B83CBE71EC5B07F00D04D5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC82FE38BB388823AA24262 /* Pods-debatkamer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -480,6 +681,7 @@
 		};
 		2B83CBE91EC5B07F00D04D5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCB5B334E850D87A229426C6 /* Pods-debatkamerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +697,7 @@
 		};
 		2B83CBEA1EC5B07F00D04D5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FAF3CE1D51FD9C79C902C69 /* Pods-debatkamerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +713,7 @@
 		};
 		2B83CBEC1EC5B07F00D04D5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A49EB919EE2D807606FDB8 /* Pods-debatkamerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8XQREM6QC3;
@@ -524,6 +728,7 @@
 		};
 		2B83CBED1EC5B07F00D04D5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19DC4762DA744B9C816EB92 /* Pods-debatkamerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8XQREM6QC3;

@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B69E0821ECEEE05007C51C5 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B69E0811ECEEE05007C51C5 /* PageVC.swift */; };
+		2B69E0841ECEEE12007C51C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B69E0831ECEEE12007C51C5 /* AppDelegate.swift */; };
 		2B83CBC61EC5B07F00D04D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B83CBC41EC5B07F00D04D5F /* Main.storyboard */; };
 		2B83CBC81EC5B07F00D04D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B83CBC71EC5B07F00D04D5F /* Assets.xcassets */; };
 		2B83CBCB1EC5B07F00D04D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B83CBC91EC5B07F00D04D5F /* LaunchScreen.storyboard */; };
 		2B83CBD61EC5B07F00D04D5F /* debatkamerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CBD51EC5B07F00D04D5F /* debatkamerTests.swift */; };
 		2B83CBE11EC5B07F00D04D5F /* debatkamerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CBE01EC5B07F00D04D5F /* debatkamerUITests.swift */; };
-		2B83CBEF1EC5B59D00D04D5F /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CBEE1EC5B59D00D04D5F /* PageVC.swift */; };
-		2B83CBF11EC5C19200D04D5F /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2B83CBF01EC5C19200D04D5F /* MyriadPro-Regular.otf */; };
 		2B83CBF41EC5C31E00D04D5F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CBF31EC5C31E00D04D5F /* LoginVC.swift */; };
 		2B83CBF61EC5CD8F00D04D5F /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CBF51EC5CD8F00D04D5F /* AccountVC.swift */; };
-		2B83CC091EC5EDDA00D04D5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CC011EC5EDDA00D04D5F /* AppDelegate.swift */; };
 		2B83CC121EC5F1AC00D04D5F /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CC0F1EC5F1AC00D04D5F /* InterestsViewController.swift */; };
 		2B83CC131EC5F1AC00D04D5F /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CC101EC5F1AC00D04D5F /* Interest.swift */; };
 		2B83CC141EC5F1AC00D04D5F /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CC111EC5F1AC00D04D5F /* InterestCollectionViewCell.swift */; };
@@ -40,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B69E0811ECEEE05007C51C5 /* PageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
+		2B69E0831ECEEE12007C51C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B83CBBD1EC5B07F00D04D5F /* debatkamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = debatkamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B83CBC51EC5B07F00D04D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B83CBC71EC5B07F00D04D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,11 +52,8 @@
 		2B83CBDC1EC5B07F00D04D5F /* debatkamerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = debatkamerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B83CBE01EC5B07F00D04D5F /* debatkamerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = debatkamerUITests.swift; sourceTree = "<group>"; };
 		2B83CBE21EC5B07F00D04D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B83CBEE1EC5B59D00D04D5F /* PageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageVC.swift; path = ../../portfolio/portfolio/PageVC.swift; sourceTree = "<group>"; };
-		2B83CBF01EC5C19200D04D5F /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MyriadPro-Regular.otf"; path = "../../../Semester 4/Maatwerk/debatkamer/MyriadPro-Regular.otf"; sourceTree = "<group>"; };
 		2B83CBF31EC5C31E00D04D5F /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		2B83CBF51EC5CD8F00D04D5F /* AccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
-		2B83CC011EC5EDDA00D04D5F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../../../Downloads/2. Downloads/carouseleffect-complete/Interests/AppDelegate.swift"; sourceTree = "<group>"; };
 		2B83CC0F1EC5F1AC00D04D5F /* InterestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
 		2B83CC101EC5F1AC00D04D5F /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		2B83CC111EC5F1AC00D04D5F /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -111,14 +109,14 @@
 			children = (
 				2B83CC151EC5F1E100D04D5F /* Tutorial scherm */,
 				2B83CBF21EC5C19B00D04D5F /* Lettertype */,
-				2B83CC011EC5EDDA00D04D5F /* AppDelegate.swift */,
+				2B69E0831ECEEE12007C51C5 /* AppDelegate.swift */,
 				2B83CBC41EC5B07F00D04D5F /* Main.storyboard */,
 				2B83CBC71EC5B07F00D04D5F /* Assets.xcassets */,
 				2B83CBC91EC5B07F00D04D5F /* LaunchScreen.storyboard */,
 				2B83CBCC1EC5B07F00D04D5F /* Info.plist */,
 				2B83CBF31EC5C31E00D04D5F /* LoginVC.swift */,
 				2B83CBF51EC5CD8F00D04D5F /* AccountVC.swift */,
-				2B83CBEE1EC5B59D00D04D5F /* PageVC.swift */,
+				2B69E0811ECEEE05007C51C5 /* PageVC.swift */,
 			);
 			path = debatkamer;
 			sourceTree = "<group>";
@@ -144,7 +142,6 @@
 		2B83CBF21EC5C19B00D04D5F /* Lettertype */ = {
 			isa = PBXGroup;
 			children = (
-				2B83CBF01EC5C19200D04D5F /* MyriadPro-Regular.otf */,
 			);
 			name = Lettertype;
 			sourceTree = "<group>";
@@ -271,7 +268,6 @@
 			files = (
 				2B83CBCB1EC5B07F00D04D5F /* LaunchScreen.storyboard in Resources */,
 				2B83CBC81EC5B07F00D04D5F /* Assets.xcassets in Resources */,
-				2B83CBF11EC5C19200D04D5F /* MyriadPro-Regular.otf in Resources */,
 				2B83CBC61EC5B07F00D04D5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,11 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B83CC091EC5EDDA00D04D5F /* AppDelegate.swift in Sources */,
+				2B69E0841ECEEE12007C51C5 /* AppDelegate.swift in Sources */,
 				2B83CC141EC5F1AC00D04D5F /* InterestCollectionViewCell.swift in Sources */,
 				2B83CBF61EC5CD8F00D04D5F /* AccountVC.swift in Sources */,
-				2B83CBEF1EC5B59D00D04D5F /* PageVC.swift in Sources */,
 				2B83CC131EC5F1AC00D04D5F /* Interest.swift in Sources */,
+				2B69E0821ECEEE05007C51C5 /* PageVC.swift in Sources */,
 				2B83CBF41EC5C31E00D04D5F /* LoginVC.swift in Sources */,
 				2B83CC121EC5F1AC00D04D5F /* InterestsViewController.swift in Sources */,
 			);

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SwiftKeychainWrapper
 
 class VotePageVC: UIViewController {
 
@@ -24,6 +26,15 @@ class VotePageVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func signOutTapped(_ sender: Any) {
+        
+        let keychainResult = KeychainWrapper.standard.remove(key: KEY_UID)
+        print("ADMIN: ID verwijderd van keychain \(keychainResult)")
+        try! Auth.auth().signOut()
+        performSegue(withIdentifier: "GoToSignIn", sender: nil)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

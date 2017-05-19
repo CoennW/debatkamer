@@ -23,6 +23,7 @@
 		2B83CC141EC5F1AC00D04D5F /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CC111EC5F1AC00D04D5F /* InterestCollectionViewCell.swift */; };
 		DB979F3EDB224B847439584C /* Pods_debatkamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBFC775A51D71E7FAF7FDBF /* Pods_debatkamer.framework */; };
 		ECE5F9948BB4DF8483B10C19 /* Pods_debatkamerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCDAC5EDD81EC9C2F59DB5C /* Pods_debatkamerUITests.framework */; };
+		F5400EF61ECF145500612A42 /* VotePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5400EF51ECF145500612A42 /* VotePageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		D19DC4762DA744B9C816EB92 /* Pods-debatkamerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debatkamerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-debatkamerUITests/Pods-debatkamerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EBBFC775A51D71E7FAF7FDBF /* Pods_debatkamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_debatkamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCDAC5EDD81EC9C2F59DB5C /* Pods_debatkamerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_debatkamerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5400EF51ECF145500612A42 /* VotePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotePageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,17 +136,18 @@
 		2B83CBBF1EC5B07F00D04D5F /* debatkamer */ = {
 			isa = PBXGroup;
 			children = (
-				2B5464471ECEFDF8001E55B4 /* ViewControllers */,
-				2B83CC151EC5F1E100D04D5F /* Tutorial scherm */,
-				2B83CBF21EC5C19B00D04D5F /* Lettertype */,
 				2B69E0831ECEEE12007C51C5 /* AppDelegate.swift */,
 				2B83CBC41EC5B07F00D04D5F /* Main.storyboard */,
 				2B83CBC71EC5B07F00D04D5F /* Assets.xcassets */,
 				2B83CBC91EC5B07F00D04D5F /* LaunchScreen.storyboard */,
+				F5400EF51ECF145500612A42 /* VotePageVC.swift */,
 				2B83CBCC1EC5B07F00D04D5F /* Info.plist */,
 				2B83CBF51EC5CD8F00D04D5F /* AccountVC.swift */,
 				2B69E0811ECEEE05007C51C5 /* PageVC.swift */,
 				2B69E0851ECEF6E5007C51C5 /* GoogleService-Info.plist */,
+				2B5464471ECEFDF8001E55B4 /* ViewControllers */,
+				2B83CC151EC5F1E100D04D5F /* Tutorial scherm */,
+				2B83CBF21EC5C19B00D04D5F /* Lettertype */,
 			);
 			path = debatkamer;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				2B69E0821ECEEE05007C51C5 /* PageVC.swift in Sources */,
 				2B83CBF41EC5C31E00D04D5F /* LoginVC.swift in Sources */,
 				2B83CC121EC5F1AC00D04D5F /* InterestsViewController.swift in Sources */,
+				F5400EF61ECF145500612A42 /* VotePageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

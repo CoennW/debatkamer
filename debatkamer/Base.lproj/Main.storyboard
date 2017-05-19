@@ -66,6 +66,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="signInTapped:" destination="Yjy-Qc-WPm" eventType="touchUpInside" id="jGJ-8G-mgv"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tekst-bg" translatesAutoresizingMaskIntoConstraints="NO" id="g71-UV-oa5">
                                 <rect key="frame" x="67" y="164" width="240" height="50"/>
@@ -76,13 +79,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P95-xR-Xx9" userLabel="Inloggen btn">
                                 <rect key="frame" x="74" y="310" width="240" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="ly9-cn-bnZ" kind="show" id="uxq-iV-3zP"/>
+                                    <action selector="signInTapped:" destination="Yjy-Qc-WPm" eventType="touchUpInside" id="diV-hV-e4x"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-Nl-cJC" userLabel="Account btn">
@@ -103,10 +106,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="dVE-D0-mnA" id="P6y-5q-74z"/>
+                        <outlet property="pwdField" destination="BVz-7N-rLv" id="xXf-R3-xI0"/>
+                        <segue destination="QEQ-Tg-Q5N" kind="show" identifier="GoToStemmen" id="Ih9-OW-XQP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7v-mS-PlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="820.83958020989508"/>
+            <point key="canvasLocation" x="-399" y="821"/>
         </scene>
         <!--Account aanmaken-->
         <scene sceneID="fpQ-JD-A8m">
@@ -194,7 +202,7 @@
                                 <rect key="frame" x="67" y="593" width="240" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="ly9-cn-bnZ" kind="show" id="eGg-7l-CoD"/>
+                                    <segue destination="ly9-cn-bnZ" kind="show" id="di4-9Q-yni"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -203,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bfq-iu-BV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496.80000000000001" y="820.83958020989508"/>
+            <point key="canvasLocation" x="375" y="821"/>
         </scene>
         <!--Stemgedrag gebruikers-->
         <scene sceneID="QZM-d9-GrY">
@@ -285,6 +293,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqf-hT-aaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1782" y="160"/>
+        </scene>
+        <!--Feed Table View Controller-->
+        <scene sceneID="01I-OW-bwY">
+            <objects>
+                <tableViewController id="ZAB-9M-D41" customClass="FeedTableViewController" customModule="debatkamer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="KsZ-ty-Aha">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="yYk-SL-kwl">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yYk-SL-kwl" id="dTq-MU-Ecw">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZAB-9M-D41" id="vWW-Ij-AYH"/>
+                            <outlet property="delegate" destination="ZAB-9M-D41" id="QOi-6x-uJf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="JpU-ZX-aVL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uIW-SC-oZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3634.4000000000001" y="156.97151424287858"/>
         </scene>
         <!--Tutorial-->
         <scene sceneID="gJV-kw-bSa">
@@ -401,12 +438,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EWr-W0-Uka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1136.8" y="820.83958020989508"/>
+            <point key="canvasLocation" x="1092" y="821"/>
         </scene>
         <!--Stemmen-->
         <scene sceneID="Erq-wC-chw">
             <objects>
-                <viewController title="Stemmen" id="QEQ-Tg-Q5N" sceneMemberID="viewController">
+                <viewController title="Stemmen" id="QEQ-Tg-Q5N" customClass="VotePageVC" customModule="debatkamer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AXw-v0-Afw"/>
                         <viewControllerLayoutGuide type="bottom" id="qfK-O9-2v2"/>
@@ -419,36 +456,79 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STEMMEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uz-UK-Kom">
-                                <rect key="frame" x="142" y="81" width="90" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI0-DL-mEN">
-                                <rect key="frame" x="248" y="318" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="NEE" backgroundImage="aandeslag"/>
-                                <connections>
-                                    <segue destination="sIK-D3-aNS" kind="show" id="RP6-2D-PDK"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpP-9u-8Eq">
-                                <rect key="frame" x="78" y="318" width="30" height="30"/>
+                                <rect key="frame" x="47" y="587" width="120" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="JA" backgroundImage="aandeslag"/>
+                                <state key="normal" title="Eens" backgroundImage="aandeslag">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="sIK-D3-aNS" kind="show" id="IQH-Je-vAW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI0-DL-mEN">
+                                <rect key="frame" x="212" y="587" width="120" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Oneens" backgroundImage="aandeslag">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sIK-D3-aNS" kind="show" id="RP6-2D-PDK"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9nT-DO-RYD">
+                                <rect key="frame" x="16" y="263" width="343" height="281"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0e-ja-SRs">
+                                <rect key="frame" x="164" y="175" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log uit"/>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="QEQ-Tg-Q5N" eventType="touchUpInside" id="LI0-rZ-Bq5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stemming:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uz-UK-Kom">
+                                <rect key="frame" x="59" y="80" width="256" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="textViewMotie" destination="9nT-DO-RYD" id="iqe-um-v7d"/>
+                        <segue destination="Yjy-Qc-WPm" kind="show" identifier="GoToSignIn" id="rYU-F5-f2E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XH-ot-DhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1781.5999999999999" y="820.83958020989508"/>
+            <point key="canvasLocation" x="2246" y="821"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9iO-Q6-tiV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tFp-s1-nPr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xUa-1Y-zYj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZAB-9M-D41" kind="relationship" relationship="rootViewController" id="53A-Pl-R6V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sj7-tL-W8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2870" y="157"/>
         </scene>
     </scenes>
     <resources>
@@ -460,7 +540,7 @@
         <image name="tekst-bg" width="800" height="140"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uxq-iV-3zP"/>
+        <segue reference="AKv-F7-5MU"/>
         <segue reference="RP6-2D-PDK"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -82,15 +82,14 @@ class VotePageVC: UIViewController {
         
     }
     
-
-    @IBAction func signOutTapped(_ sender: Any) {
-        
+    // Uitloggen - ga naar inlog pagina
+    @IBAction func uitloggenTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.remove(key: KEY_UID)
         print("ADMIN: ID verwijderd van keychain \(keychainResult)")
         try! Auth.auth().signOut()
         performSegue(withIdentifier: "GoToSignIn", sender: nil)
-        
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

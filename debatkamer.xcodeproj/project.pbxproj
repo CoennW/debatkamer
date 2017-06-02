@@ -22,6 +22,7 @@
 		2B83CC131EC5F1AC00D04D5F /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CC101EC5F1AC00D04D5F /* Interest.swift */; };
 		2B83CC141EC5F1AC00D04D5F /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83CC111EC5F1AC00D04D5F /* InterestCollectionViewCell.swift */; };
 		2BE09A0D1ECF1FE100CF89CB /* variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE09A0C1ECF1FE100CF89CB /* variable.swift */; };
+		2BFD15C71EE17BF500ABE75B /* MooieBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD15C61EE17BF500ABE75B /* MooieBtn.swift */; };
 		DB979F3EDB224B847439584C /* Pods_debatkamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBFC775A51D71E7FAF7FDBF /* Pods_debatkamer.framework */; };
 		ECE5F9948BB4DF8483B10C19 /* Pods_debatkamerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCDAC5EDD81EC9C2F59DB5C /* Pods_debatkamerUITests.framework */; };
 		F5400EF61ECF145500612A42 /* VotePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5400EF51ECF145500612A42 /* VotePageVC.swift */; };
@@ -70,6 +71,7 @@
 		2B83CC101EC5F1AC00D04D5F /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		2B83CC111EC5F1AC00D04D5F /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
 		2BE09A0C1ECF1FE100CF89CB /* variable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = variable.swift; sourceTree = "<group>"; };
+		2BFD15C61EE17BF500ABE75B /* MooieBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MooieBtn.swift; sourceTree = "<group>"; };
 		3A7172DE48F9B3294EEB8E99 /* Pods_debatkamerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_debatkamerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A49EB919EE2D807606FDB8 /* Pods-debatkamerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debatkamerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-debatkamerUITests/Pods-debatkamerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9FAF3CE1D51FD9C79C902C69 /* Pods-debatkamerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debatkamerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-debatkamerTests/Pods-debatkamerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		2B83CBBF1EC5B07F00D04D5F /* debatkamer */ = {
 			isa = PBXGroup;
 			children = (
+				2BFD15C81EE17E4F00ABE75B /* Style */,
 				2BE09A0B1ECF1F8B00CF89CB /* Variable */,
 				2B69E0831ECEEE12007C51C5 /* AppDelegate.swift */,
 				F5400EF71ECF252700612A42 /* FeedTableViewController.swift */,
@@ -210,6 +213,14 @@
 				2BE09A0C1ECF1FE100CF89CB /* variable.swift */,
 			);
 			name = Variable;
+			sourceTree = "<group>";
+		};
+		2BFD15C81EE17E4F00ABE75B /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				2BFD15C61EE17BF500ABE75B /* MooieBtn.swift */,
+			);
+			name = Style;
 			sourceTree = "<group>";
 		};
 		45DFC4C4B2A82295F9561B3A /* Frameworks */ = {
@@ -520,6 +531,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BFD15C71EE17BF500ABE75B /* MooieBtn.swift in Sources */,
 				2BE09A0D1ECF1FE100CF89CB /* variable.swift in Sources */,
 				2B69E0841ECEEE12007C51C5 /* AppDelegate.swift in Sources */,
 				2B83CC141EC5F1AC00D04D5F /* InterestCollectionViewCell.swift in Sources */,

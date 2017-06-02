@@ -26,6 +26,9 @@
 		ECE5F9948BB4DF8483B10C19 /* Pods_debatkamerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCDAC5EDD81EC9C2F59DB5C /* Pods_debatkamerUITests.framework */; };
 		F5400EF61ECF145500612A42 /* VotePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5400EF51ECF145500612A42 /* VotePageVC.swift */; };
 		F5400EF81ECF252700612A42 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5400EF71ECF252700612A42 /* FeedTableViewController.swift */; };
+		F5431A941EE07D9D007C68E3 /* votingBehaviorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5431A931EE07D9D007C68E3 /* votingBehaviorVC.swift */; };
+		F5431A9A1EE1508E007C68E3 /* parlementVotingBehaviorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5431A991EE1508E007C68E3 /* parlementVotingBehaviorVC.swift */; };
+		F5431A9E1EE157BE007C68E3 /* ParlementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5431A9D1EE157BE007C68E3 /* ParlementTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		F5400EF51ECF145500612A42 /* VotePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotePageVC.swift; sourceTree = "<group>"; };
 		F5400EF71ECF252700612A42 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		F5400EF91ECF260800612A42 /* debatkamer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "debatkamer-Bridging-Header.h"; sourceTree = "<group>"; };
+		F5431A931EE07D9D007C68E3 /* votingBehaviorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = votingBehaviorVC.swift; sourceTree = "<group>"; };
+		F5431A991EE1508E007C68E3 /* parlementVotingBehaviorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parlementVotingBehaviorVC.swift; sourceTree = "<group>"; };
+		F5431A9D1EE157BE007C68E3 /* ParlementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParlementTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +151,11 @@
 				2B69E0831ECEEE12007C51C5 /* AppDelegate.swift */,
 				F5400EF71ECF252700612A42 /* FeedTableViewController.swift */,
 				2B83CBC41EC5B07F00D04D5F /* Main.storyboard */,
+				F5431A9D1EE157BE007C68E3 /* ParlementTableViewCell.swift */,
 				2B83CBC71EC5B07F00D04D5F /* Assets.xcassets */,
 				2B83CBC91EC5B07F00D04D5F /* LaunchScreen.storyboard */,
+				F5431A931EE07D9D007C68E3 /* votingBehaviorVC.swift */,
+				F5431A991EE1508E007C68E3 /* parlementVotingBehaviorVC.swift */,
 				F5400EF51ECF145500612A42 /* VotePageVC.swift */,
 				2B83CBCC1EC5B07F00D04D5F /* Info.plist */,
 				2B83CBF51EC5CD8F00D04D5F /* AccountVC.swift */,
@@ -517,8 +526,11 @@
 				2B83CBF61EC5CD8F00D04D5F /* AccountVC.swift in Sources */,
 				2B83CC131EC5F1AC00D04D5F /* Interest.swift in Sources */,
 				F5400EF81ECF252700612A42 /* FeedTableViewController.swift in Sources */,
+				F5431A9A1EE1508E007C68E3 /* parlementVotingBehaviorVC.swift in Sources */,
 				2B69E0821ECEEE05007C51C5 /* PageVC.swift in Sources */,
 				2B83CBF41EC5C31E00D04D5F /* LoginVC.swift in Sources */,
+				F5431A941EE07D9D007C68E3 /* votingBehaviorVC.swift in Sources */,
+				F5431A9E1EE157BE007C68E3 /* ParlementTableViewCell.swift in Sources */,
 				2B83CC121EC5F1AC00D04D5F /* InterestsViewController.swift in Sources */,
 				F5400EF61ECF145500612A42 /* VotePageVC.swift in Sources */,
 			);

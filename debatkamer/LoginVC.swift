@@ -31,14 +31,14 @@ class LoginVC: UIViewController {
         if let email = emailField.text, let pwd = pwdField.text {
             Auth.auth().signIn(withEmail: email, password: pwd, completion: { (user, error) in
                 if error == nil {
-                    print("ADMIN: Email gebruiker maakt connectie met Firebase")
+                    print("ADMIN: Email gebruiker maakt connectie met Firebase1")
                     if let user = user {
                         self.completeSignIn(id: user.uid)
                     }
                 } else {
                     Auth.auth().createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
-                            print("ADMIN: Kan geen connectie maken met Firebase")
+                            print("ADMIN: Kan geen connectie maken met Firebase2")
                         } else {
                             print("ADMIN: Succesvol verbinding gemaakt met Firebase")
                             if let user = user {

@@ -10,10 +10,12 @@ import UIKit
 
 class ParlementTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var zetelLabel: UILabel!
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var voteLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         // Initialization code
     }
 

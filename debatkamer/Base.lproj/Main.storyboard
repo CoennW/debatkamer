@@ -652,7 +652,15 @@ en gaat over tot de orde van de dag. </string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nT-DO-RYD">
                                 <rect key="frame" x="29" y="178" width="316" height="311"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <mutableString key="text">De Kamer, Gehoord de beraadslaging, overwegende dat vooral aardbevingen en het risico daarop sturend zijn voor besluiten om de gaswinning terug te dringen;Overwegende dat deze benadering heeft geleid en blijft leiden tot een verhoogd veiligheidsrisico voor bewoners van gaswinningsgebieden;Overwegende dat dit zorgt voor aanzienlijke milieuschade en schade aan bebouwing, en grote financiële en emotionele schade voor bewoners tot gevolg heeft; spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen en tussenstappen te realiseren, en gaat over tot de orde van de dag.</mutableString>
+                                <mutableString key="text">De Kamer,
+ 
+Gehoord de beraadslaging, overwegende dat vooral aardbevingen en het risico daarop sturend zijn voor besluiten om de gaswinning terug te dringen;
+
+Overwegende dat deze benadering heeft geleid en blijft leiden tot een verhoogd veiligheidsrisico voor bewoners van gaswinningsgebieden;
+
+Overwegende dat dit zorgt voor aanzienlijke milieuschade en schade aan bebouwing, en grote financiële en emotionele schade voor bewoners tot gevolg heeft; 
+
+spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen en tussenstappen te realiseren, en gaat over tot de orde van de dag.</mutableString>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

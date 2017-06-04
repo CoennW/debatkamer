@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kg0-ZV-9xJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kg0-ZV-9xJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -182,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7v-mS-PlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682.39999999999998" y="845.1274362818591"/>
+            <point key="canvasLocation" x="602" y="845"/>
         </scene>
         <!--Account aanmaken-->
         <scene sceneID="fpQ-JD-A8m">
@@ -290,20 +290,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pFV-df-BIZ">
-                                <rect key="frame" x="16" y="143" width="343" height="311"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">De Kamer,                                                                                           
-gehoord de beraadslaging, overwegende dat vooral aardbevingen en het risico daarop sturend zijn voor besluiten om de gaswinning terug te dringen;
-overwegende dat deze benadering heeft geleid en blijft leiden tot een verhoogd veiligheidsrisico voor bewoners van gaswinningsgebieden;
-overwegende dat dit zorgt voor aanzienlijke milieuschade en schade aan bebouwing, en grote financiële en emotionele schade voor bewoners tot gevolg heeft;
-spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen en tussenstappen te realiseren,
-en gaat over tot de orde van de dag. </string>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7b-vc-NpI">
                                 <rect key="frame" x="67" y="529" width="100" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -332,20 +318,79 @@ en gaat over tot de orde van de dag. </string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stemmen in debatkamer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAx-Tu-aGY">
-                                <rect key="frame" x="81" y="20" width="212" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Debatkamer stemde over de motie:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAx-Tu-aGY">
+                                <rect key="frame" x="48" y="66" width="278" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAr-CJ-dOM">
+                                <rect key="frame" x="29" y="140" width="316" height="311"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <string key="text">De Kamer,
+ 
+Gehoord de beraadslaging, overwegende dat vooral aardbevingen en het risico daarop sturend zijn voor besluiten om de gaswinning terug te dringen;
+
+Overwegende dat deze benadering heeft geleid en blijft leiden tot een verhoogd veiligheidsrisico voor bewoners van gaswinningsgebieden;
+
+Overwegende dat dit zorgt voor aanzienlijke milieuschade en schade aan bebouwing, en grote financiële en emotionele schade voor bewoners tot gevolg heeft; 
+
+spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen en tussenstappen te realiseren, en gaat over tot de orde van de dag.</string>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cb-2b-BeN">
+                                <rect key="frame" x="162" y="459" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="urlButton:" destination="VhZ-FL-nlM" eventType="touchUpInside" id="SoI-ia-asM"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yBp-FU-t7m">
+                                <rect key="frame" x="29" y="459" width="40" height="208"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="SST-Y0-YoW"/>
+                                    <constraint firstAttribute="height" constant="208" id="xzV-uY-0In"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hlT-GK-aOa">
+                                <rect key="frame" x="305" y="459" width="40" height="208"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="208" id="XmL-5X-42g"/>
+                                    <constraint firstAttribute="width" constant="40" id="so4-Re-RB3"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mnq-j4-UX2" firstAttribute="top" secondItem="hlT-GK-aOa" secondAttribute="bottom" id="84a-fL-ddB"/>
+                            <constraint firstItem="Mnq-j4-UX2" firstAttribute="top" secondItem="yBp-FU-t7m" secondAttribute="bottom" id="SYh-bS-bQl"/>
+                            <constraint firstItem="yBp-FU-t7m" firstAttribute="leading" secondItem="ot0-hV-7Ye" secondAttribute="leadingMargin" constant="13" id="gR6-Os-IdD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hlT-GK-aOa" secondAttribute="trailing" constant="14" id="yBh-jK-iFr"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Stemgedrag Debatkamer" id="zXC-Zv-Vh9"/>
                     <connections>
+                        <outlet property="AgreeBoxHeight" destination="xzV-uY-0In" id="bh6-Zv-DU7"/>
                         <outlet property="agreeLabel" destination="xz2-fC-fXz" id="Lfx-Vj-hb5"/>
+                        <outlet property="disagreeBoxHeight" destination="XmL-5X-42g" id="FQw-tL-itY"/>
                         <outlet property="disagreeLabel" destination="bL2-9t-hdk" id="BFf-hV-G8r"/>
+                        <outlet property="eensBlock" destination="yBp-FU-t7m" id="Qjy-zN-Ow1"/>
+                        <outlet property="textViewMotie" destination="nAr-CJ-dOM" id="a7O-Hl-AVg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLi-9q-jwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -383,7 +428,7 @@ en gaat over tot de orde van de dag. </string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="118"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iS0-Zd-kl4" id="3Jv-dT-PgX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sxl-Qa-Lm7">
@@ -513,7 +558,7 @@ en gaat over tot de orde van de dag. </string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InterestCell" id="Gry-FF-jzj" customClass="InterestCollectionViewCell" customModule="debatkamer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="46.5" width="200" height="400"/>
+                                        <rect key="frame" x="0.0" y="47" width="200" height="400"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="400"/>

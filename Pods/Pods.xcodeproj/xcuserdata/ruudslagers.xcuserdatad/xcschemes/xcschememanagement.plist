@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FeedKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +42,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>09863253753618F9D01B2B0622894C30</key>
+		<key>056441ED0CE73B79E3C1738DDFE426A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1029E0173AB363E7DE2C8BD8D2391F47</key>
+		<key>09863253753618F9D01B2B0622894C30</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>831826FC47A2D8BFF7911FCCFB0C78F7</key>
+		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<key>C97C313495DC87779123B6AB9B2B6BC7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA9EB05867675E4D9F03AEF1019600EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

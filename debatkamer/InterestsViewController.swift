@@ -13,7 +13,7 @@ class InterestsViewController: UIViewController
     @IBOutlet weak var collectionView: UICollectionView!
     
     var interests = Interest.fetchInterests()
-    let cellScaling: CGFloat = 0.6
+    let cellScaling: CGFloat = 0.8
     
     override func viewDidLoad() {
         super.viewDidLoad()

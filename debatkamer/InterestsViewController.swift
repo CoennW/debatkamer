@@ -1,9 +1,9 @@
 //
-//  InterestsCollectionViewController.swift
-//  Interests
+//  InterestViewController.swift
+//  debatkamer
 //
-//  Created by Duc Tran on 3/6/17.
-//  Copyright © 2017 Developer Inspirus. All rights reserved.
+//  Created by Ruud Slagers on 12/05/2017.
+//  Copyright © 2017 Ruud Slagers. All rights reserved.
 //
 
 import UIKit
@@ -13,10 +13,13 @@ class InterestsViewController: UIViewController
     @IBOutlet weak var collectionView: UICollectionView!
     
     var interests = Interest.fetchInterests()
-    let cellScaling: CGFloat = 0.6
+    let cellScaling: CGFloat = 0.8
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: navigationController, action: nil)
+        navigationItem.leftBarButtonItem = backButton
         
         let screenSize = UIScreen.main.bounds.size
         let cellWidth = floor(screenSize.width * cellScaling)
@@ -69,6 +72,8 @@ extension InterestsViewController : UIScrollViewDelegate, UICollectionViewDelega
         targetContentOffset.pointee = offset
     }
 }
+
+
 
 
 

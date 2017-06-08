@@ -17,7 +17,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" title="Debatkamer" transitionStyle="scroll" pageSpacing="2" navigationOrientation="horizontal" spineLocation="none" id="sIK-D3-aNS" customClass="PageVC" customModule="debatkamer" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sv1-gF-ZSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-377" y="107"/>
+            <point key="canvasLocation" x="617" y="107"/>
         </scene>
         <!--Login-->
         <scene sceneID="qnL-xu-4Ib">
@@ -637,7 +637,7 @@ spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen 
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZI9-Yt-4oH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-258.39999999999998" y="844.22788605697156"/>
+            <point key="canvasLocation" x="-145" y="857"/>
         </scene>
     </scenes>
     <resources>

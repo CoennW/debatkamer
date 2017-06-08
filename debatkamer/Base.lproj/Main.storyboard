@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kg0-ZV-9xJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kg0-ZV-9xJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" title="Debatkamer" transitionStyle="scroll" pageSpacing="2" navigationOrientation="horizontal" spineLocation="none" id="sIK-D3-aNS" customClass="PageVC" customModule="debatkamer" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sv1-gF-ZSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-377" y="107"/>
+            <point key="canvasLocation" x="617" y="107"/>
         </scene>
         <!--Login-->
         <scene sceneID="qnL-xu-4Ib">
@@ -55,59 +55,24 @@
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6g-3K-JA3">
-                                <rect key="frame" x="104" y="279" width="167" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="167" id="LJp-dP-dNS"/>
-                                    <constraint firstAttribute="height" constant="33" id="mUl-he-v36"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <state key="normal" title="Wachtwoord vergeten?">
-                                    <color key="titleColor" red="0.80392156862745101" green="0.80392156862745101" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inlog-btn" translatesAutoresizingMaskIntoConstraints="NO" id="p9I-0e-8Jw">
                                 <rect key="frame" x="52" y="354" width="271" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="8sx-wL-8nS"/>
+                                    <constraint firstAttribute="width" constant="271" id="1I0-Sf-xEX"/>
+                                    <constraint firstAttribute="height" constant="50" id="neQ-E7-pIo"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inloggen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ow2-5v-n8r">
-                                <rect key="frame" x="157.5" y="362" width="60" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registreren" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ow2-5v-n8r">
+                                <rect key="frame" x="145" y="364" width="84" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="QkB-79-cfV"/>
-                                    <constraint firstAttribute="width" constant="60" id="TnK-NC-mzH"/>
+                                    <constraint firstAttribute="width" constant="84" id="hWR-5O-SiQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="qO6-1s-SCu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P95-xR-Xx9" userLabel="Inloggen btn">
-                                <rect key="frame" x="68" y="356" width="239" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Dp7-R7-UZ1"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="signInTapped:" destination="Yjy-Qc-WPm" eventType="touchUpInside" id="diV-hV-e4x"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aanmaken-btn" translatesAutoresizingMaskIntoConstraints="NO" id="qYL-Hs-BTo">
-                                <rect key="frame" x="52" y="437" width="271" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="kFd-cN-DXR"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account aanmaken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Eg-qd-gxV">
-                                <rect key="frame" x="120.5" y="452" width="134" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="giV-zN-43N"/>
-                                    <constraint firstAttribute="height" constant="21" id="mG1-F0-mcv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gebruikersnaam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVE-D0-mnA">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVE-D0-mnA">
                                 <rect key="frame" x="71" y="134" width="252" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JOp-d0-6Eo"/>
@@ -119,160 +84,55 @@
                                     <action selector="signInTapped:" destination="Yjy-Qc-WPm" eventType="touchUpInside" id="jGJ-8G-mgv"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-Nl-cJC" userLabel="Account btn">
-                                <rect key="frame" x="68" y="440" width="239" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P95-xR-Xx9" userLabel="Inloggen btn">
+                                <rect key="frame" x="68" y="354" width="239" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="A7Q-BM-G3z"/>
+                                    <constraint firstAttribute="width" constant="239" id="st4-Pz-tak"/>
+                                    <constraint firstAttribute="height" constant="50" id="xVP-bH-il0"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="mFm-9b-D4z" kind="show" id="lVe-gS-mYB"/>
+                                    <action selector="signInTapped:" destination="Yjy-Qc-WPm" eventType="touchUpInside" id="diV-hV-e4x"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="NB1-Nl-cJC" secondAttribute="trailing" constant="52" id="2Lc-Mw-NYJ"/>
                             <constraint firstItem="DUl-HF-bEc" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leading" constant="52" id="2is-Tf-MRU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="P95-xR-Xx9" secondAttribute="trailing" constant="52" id="4ZU-Gb-E8C"/>
-                            <constraint firstItem="P95-xR-Xx9" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leadingMargin" constant="52" id="5Dw-1Z-l23"/>
-                            <constraint firstItem="P95-xR-Xx9" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="6ka-0F-pxy"/>
                             <constraint firstItem="dVE-D0-mnA" firstAttribute="top" secondItem="o9z-k2-wET" secondAttribute="bottom" constant="70" id="8FO-k4-xn8"/>
-                            <constraint firstItem="p9I-0e-8Jw" firstAttribute="top" secondItem="N6g-3K-JA3" secondAttribute="bottom" constant="42" id="9bw-5B-vMJ"/>
                             <constraint firstItem="dVE-D0-mnA" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leadingMargin" constant="55" id="9t3-9G-n06"/>
-                            <constraint firstItem="qYL-Hs-BTo" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="BKQ-pw-hV6"/>
-                            <constraint firstItem="NB1-Nl-cJC" firstAttribute="top" secondItem="P95-xR-Xx9" secondAttribute="bottom" constant="34" id="CKd-UT-Igq"/>
                             <constraint firstItem="g71-UV-oa5" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leading" constant="52" id="EmU-wa-xmY"/>
                             <constraint firstItem="g71-UV-oa5" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="IYx-Bk-DZk"/>
                             <constraint firstItem="DUl-HF-bEc" firstAttribute="top" secondItem="o9z-k2-wET" secondAttribute="bottom" constant="70" id="MRJ-er-1eO"/>
-                            <constraint firstItem="qYL-Hs-BTo" firstAttribute="top" secondItem="P95-xR-Xx9" secondAttribute="bottom" constant="31" id="MxM-eI-LqB"/>
                             <constraint firstItem="llz-YK-25u" firstAttribute="top" secondItem="nJJ-JZ-ya0" secondAttribute="top" id="OQb-NV-cU3"/>
                             <constraint firstAttribute="trailing" secondItem="DUl-HF-bEc" secondAttribute="trailing" constant="52" id="OVe-jp-zL5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BVz-7N-rLv" secondAttribute="trailing" constant="36" id="OzB-ue-ZMV"/>
-                            <constraint firstItem="qYL-Hs-BTo" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leading" constant="52" id="ThP-K8-jQm"/>
-                            <constraint firstAttribute="trailing" secondItem="p9I-0e-8Jw" secondAttribute="trailing" constant="52" id="UBY-jR-20W"/>
                             <constraint firstItem="BVz-7N-rLv" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leadingMargin" constant="55" id="Wcw-1O-TEC"/>
                             <constraint firstItem="DUl-HF-bEc" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="Wsq-PT-K8a"/>
                             <constraint firstItem="llz-YK-25u" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leading" id="Wwu-rj-INo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dVE-D0-mnA" secondAttribute="trailing" constant="36" id="X5f-lZ-KKS"/>
-                            <constraint firstItem="ow2-5v-n8r" firstAttribute="top" secondItem="N6g-3K-JA3" secondAttribute="bottom" constant="50" id="YxJ-4e-nIr"/>
-                            <constraint firstAttribute="trailing" secondItem="qYL-Hs-BTo" secondAttribute="trailing" constant="52" id="ZCs-J6-KmH"/>
                             <constraint firstItem="g71-UV-oa5" firstAttribute="top" secondItem="dVE-D0-mnA" secondAttribute="bottom" constant="24" id="ceC-L6-W4v"/>
-                            <constraint firstItem="ow2-5v-n8r" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="d6A-Ih-ucK"/>
-                            <constraint firstItem="p9I-0e-8Jw" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="fAI-jn-PJE"/>
+                            <constraint firstItem="P95-xR-Xx9" firstAttribute="centerY" secondItem="p9I-0e-8Jw" secondAttribute="centerY" id="fyD-uk-GS3"/>
                             <constraint firstItem="BVz-7N-rLv" firstAttribute="top" secondItem="dVE-D0-mnA" secondAttribute="bottom" constant="24" id="gJQ-3e-rvh"/>
-                            <constraint firstItem="0Eg-qd-gxV" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="kI6-Ey-8pj"/>
+                            <constraint firstItem="p9I-0e-8Jw" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="geP-Nt-Jzb"/>
                             <constraint firstItem="h3e-tD-VsW" firstAttribute="top" secondItem="llz-YK-25u" secondAttribute="bottom" id="kyr-UY-fhF"/>
                             <constraint firstAttribute="trailing" secondItem="g71-UV-oa5" secondAttribute="trailing" constant="52" id="lRA-JQ-z71"/>
-                            <constraint firstItem="NB1-Nl-cJC" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="nA4-cl-hsI"/>
-                            <constraint firstItem="0Eg-qd-gxV" firstAttribute="top" secondItem="P95-xR-Xx9" secondAttribute="bottom" constant="46" id="nFP-gU-BOK"/>
+                            <constraint firstItem="ow2-5v-n8r" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="nbt-jQ-BeW"/>
                             <constraint firstAttribute="trailing" secondItem="llz-YK-25u" secondAttribute="trailing" id="owV-FH-HCQ"/>
-                            <constraint firstItem="N6g-3K-JA3" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="pkd-aP-gLw"/>
-                            <constraint firstItem="p9I-0e-8Jw" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leading" constant="52" id="qpW-uR-h4A"/>
-                            <constraint firstItem="N6g-3K-JA3" firstAttribute="top" secondItem="BVz-7N-rLv" secondAttribute="bottom" constant="21" id="x9J-dz-YiT"/>
-                            <constraint firstItem="NB1-Nl-cJC" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leadingMargin" constant="52" id="xcu-6R-Mlw"/>
-                            <constraint firstItem="P95-xR-Xx9" firstAttribute="top" secondItem="N6g-3K-JA3" secondAttribute="bottom" constant="44" id="xoE-k5-Lfo"/>
+                            <constraint firstItem="ow2-5v-n8r" firstAttribute="top" secondItem="BVz-7N-rLv" secondAttribute="bottom" constant="106" id="r5g-yy-bDl"/>
+                            <constraint firstItem="P95-xR-Xx9" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="rtG-Py-oLi"/>
+                            <constraint firstItem="p9I-0e-8Jw" firstAttribute="top" secondItem="BVz-7N-rLv" secondAttribute="bottom" constant="96" id="yeu-R5-ad8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Debatkamer" id="CdK-zP-hFA"/>
                     <connections>
                         <outlet property="emailField" destination="dVE-D0-mnA" id="P6y-5q-74z"/>
                         <outlet property="pwdField" destination="BVz-7N-rLv" id="xXf-R3-xI0"/>
-                        <segue destination="k60-wP-oXl" kind="show" identifier="GoToStemmen" id="Ih9-OW-XQP"/>
+                        <segue destination="ly9-cn-bnZ" kind="show" identifier="GoToStemmen" id="rym-sh-ku1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7v-mS-PlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="602" y="845"/>
-        </scene>
-        <!--Account aanmaken-->
-        <scene sceneID="fpQ-JD-A8m">
-            <objects>
-                <viewController title="Account aanmaken" id="mFm-9b-D4z" customClass="AccountVC" customModule="debatkamer" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VPZ-8s-RJR"/>
-                        <viewControllerLayoutGuide type="bottom" id="Cfx-JZ-0kQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xa4-gJ-NyU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-blauw" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-B6-Qpi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tekst-bg" translatesAutoresizingMaskIntoConstraints="NO" id="WqO-QS-FgA">
-                                <rect key="frame" x="67" y="131" width="240" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Naam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hRy-M7-caz">
-                                <rect key="frame" x="81" y="141" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tekst-bg" translatesAutoresizingMaskIntoConstraints="NO" id="2tu-c7-N9X">
-                                <rect key="frame" x="67" y="208" width="240" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tekst-bg" translatesAutoresizingMaskIntoConstraints="NO" id="LUs-ze-Eqf">
-                                <rect key="frame" x="67" y="284" width="240" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GXe-fr-EY7">
-                                <rect key="frame" x="81" y="294" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tekst-bg" translatesAutoresizingMaskIntoConstraints="NO" id="a9o-Db-6y6">
-                                <rect key="frame" x="67" y="365" width="240" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wachtwoord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PdB-2J-SwI">
-                                <rect key="frame" x="81" y="375" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inlog-btn" translatesAutoresizingMaskIntoConstraints="NO" id="Pmu-ME-pmb">
-                                <rect key="frame" x="67" y="589" width="240" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registreren" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdS-Gs-vmo">
-                                <rect key="frame" x="146" y="602" width="81" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tekst-bg" translatesAutoresizingMaskIntoConstraints="NO" id="alT-L4-WTq">
-                                <rect key="frame" x="67" y="439" width="240" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bevestig wachtwoord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="60i-Cp-N2D">
-                                <rect key="frame" x="81" y="449" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gebruikersnaam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FJa-Fz-H5x">
-                                <rect key="frame" x="74" y="218" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bfq-iu-BV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1512.8" y="844.22788605697156"/>
+            <point key="canvasLocation" x="866" y="843"/>
         </scene>
         <!--Stemgedrag gebruikers-->
         <scene sceneID="QZM-d9-GrY">
@@ -596,7 +456,7 @@ spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen 
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InterestCell" id="Gry-FF-jzj" customClass="InterestCollectionViewCell" customModule="debatkamer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="47" width="200" height="400"/>
+                                        <rect key="frame" x="0.0" y="46.5" width="200" height="400"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="400"/>
@@ -680,7 +540,7 @@ spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EWr-W0-Uka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2264.8000000000002" y="845.1274362818591"/>
+            <point key="canvasLocation" x="1849" y="844"/>
         </scene>
         <!--Stemmen-->
         <scene sceneID="Erq-wC-chw">
@@ -815,13 +675,12 @@ spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen 
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZI9-Yt-4oH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-258.39999999999998" y="844.22788605697156"/>
+            <point key="canvasLocation" x="-145" y="857"/>
         </scene>
     </scenes>
     <resources>
         <image name="00000000-logout" width="24" height="24"/>
         <image name="aandeslag" width="1080" height="160"/>
-        <image name="aanmaken-btn" width="800" height="140"/>
         <image name="bg-blauw" width="750" height="1334"/>
         <image name="f1" width="1080" height="1349"/>
         <image name="inlog-btn" width="800" height="140"/>
@@ -829,6 +688,5 @@ spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen 
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="IQH-Je-vAW"/>
-        <segue reference="Ih9-OW-XQP"/>
     </inferredMetricsTieBreakers>
 </document>

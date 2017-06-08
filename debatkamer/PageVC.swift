@@ -22,7 +22,7 @@ class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewCo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationItem.setHidesBackButton(true, animated: true)        
         self.dataSource = self
         self.delegate = self
         if let firstVC = VCArr.first {

@@ -11,6 +11,7 @@ pod ‘Firebase/Auth’
 pod ‘Firebase/Database’
 pod ‘Firebase/Storage’
 pod 'SwiftKeychainWrapper'
+pod 'FeedKit', '~> 5.0'
 
   target 'debatkamerTests' do
     inherit! :search_paths

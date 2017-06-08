@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import FeedKit
 
 class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
-    
+    let url = URL(string: "http://images.apple.com/main/rss/hotnews/hotnews.rss")!
     var news = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        feedParsing()
+        showFeedParse()
+       
         // Do any additional setup after loading the view.
     }
 
@@ -26,10 +29,60 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return news.count
+        let count = 1
+        /*FeedParser(URL: url)?.parse({ (result) in
+            
+            guard let feed = result.rssFeed, result.isSuccess else {
+                print(result.error!)
+                return
+            }
+            
+            count = (feed.items?.count)!
+            
+        })*/
+        return count
     }
     
-
+    func feedParsing()
+    {
+        FeedParser(URL: url)?.parse({ (result) in
+            result.rssFeed // An `RSSFeed` model
+        })
+        
+        FeedParser(URL: url)?.parse({ (result) in
+            
+            switch result {
+            case .rss(let rssFeed):
+                print(rssFeed) // An `RSSFeed` model
+            case .atom(let atomFeed):
+                print(atomFeed) // An `AtomFeed` model
+            case .failure(let error):
+                print(error) // An `NSError` object
+            }
+            
+        })
+        
+        
+    }
+    
+    func showFeedParse()
+    {
+        FeedParser(URL: url)?.parse({ (result) in
+            
+            guard let feed = result.rssFeed, result.isSuccess else {
+                print(result.error!)
+                return
+            }
+            
+            print(feed.title)                      // The feed's `Title`
+            print(feed.items?.count)               // The number of articles
+            print(feed.items?.first?.title)        // The feed's first article `Title`
+            print(feed.items?.first?.description)  // The feed's first article `Description`
+            print(feed.items?.first?.pubDate)      // The feed's first article `Publication Date`
+            
+        })
+  
+    }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {

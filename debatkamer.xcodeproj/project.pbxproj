@@ -30,6 +30,8 @@
 		F5431A941EE07D9D007C68E3 /* votingBehaviorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5431A931EE07D9D007C68E3 /* votingBehaviorVC.swift */; };
 		F5431A9A1EE1508E007C68E3 /* parlementVotingBehaviorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5431A991EE1508E007C68E3 /* parlementVotingBehaviorVC.swift */; };
 		F5431A9E1EE157BE007C68E3 /* ParlementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5431A9D1EE157BE007C68E3 /* ParlementTableViewCell.swift */; };
+		F5754AC51EE9466C00AFC100 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5754AC41EE9466C00AFC100 /* NewsViewController.swift */; };
+		F5754AC71EE94AFE00AFC100 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5754AC61EE94AFE00AFC100 /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		F5431A931EE07D9D007C68E3 /* votingBehaviorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = votingBehaviorVC.swift; sourceTree = "<group>"; };
 		F5431A991EE1508E007C68E3 /* parlementVotingBehaviorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parlementVotingBehaviorVC.swift; sourceTree = "<group>"; };
 		F5431A9D1EE157BE007C68E3 /* ParlementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParlementTableViewCell.swift; sourceTree = "<group>"; };
+		F5754AC41EE9466C00AFC100 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		F5754AC61EE94AFE00AFC100 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,8 @@
 				2B69E0831ECEEE12007C51C5 /* AppDelegate.swift */,
 				F5400EF71ECF252700612A42 /* FeedTableViewController.swift */,
 				2B83CBC41EC5B07F00D04D5F /* Main.storyboard */,
+				F5754AC41EE9466C00AFC100 /* NewsViewController.swift */,
+				F5754AC61EE94AFE00AFC100 /* NewsTableViewCell.swift */,
 				F5431A9D1EE157BE007C68E3 /* ParlementTableViewCell.swift */,
 				2B83CBC71EC5B07F00D04D5F /* Assets.xcassets */,
 				2B83CBC91EC5B07F00D04D5F /* LaunchScreen.storyboard */,
@@ -533,7 +539,9 @@
 			files = (
 				2BFD15C71EE17BF500ABE75B /* MooieBtn.swift in Sources */,
 				2BE09A0D1ECF1FE100CF89CB /* variable.swift in Sources */,
+				F5754AC71EE94AFE00AFC100 /* NewsTableViewCell.swift in Sources */,
 				2B69E0841ECEEE12007C51C5 /* AppDelegate.swift in Sources */,
+				F5754AC51EE9466C00AFC100 /* NewsViewController.swift in Sources */,
 				2B83CC141EC5F1AC00D04D5F /* InterestCollectionViewCell.swift in Sources */,
 				2B83CBF61EC5CD8F00D04D5F /* AccountVC.swift in Sources */,
 				2B83CC131EC5F1AC00D04D5F /* Interest.swift in Sources */,

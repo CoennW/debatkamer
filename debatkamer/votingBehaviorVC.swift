@@ -80,7 +80,7 @@ class votingBehaviorVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func animateVotes() {
+    /*func animateVotes() {
         
         //animatie voor aantal eens
         UIView.animate(withDuration: 4, delay: 0.5, options: UIViewAnimationOptions.curveEaseOut, animations: {
@@ -106,7 +106,7 @@ class votingBehaviorVC: UIViewController {
             
         }, completion: nil)
         
-    }
+    }*/
     
     func runAddVotes() {
         

@@ -10,7 +10,6 @@ import UIKit
 import FeedKit
 
 class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-   
     let url = URL(string: "http://images.apple.com/main/rss/hotnews/hotnews.rss")!
     var news = [String]()
 

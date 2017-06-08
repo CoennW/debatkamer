@@ -385,7 +385,7 @@ spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen 
                     </view>
                     <navigationItem key="navigationItem" title="Stemgedrag Debatkamer" id="zXC-Zv-Vh9"/>
                     <connections>
-                        <outlet property="AgreeBoxHeight" destination="xzV-uY-0In" id="bh6-Zv-DU7"/>
+                        <outlet property="agreeBoxHeight" destination="xzV-uY-0In" id="BXu-bP-yud"/>
                         <outlet property="agreeLabel" destination="xz2-fC-fXz" id="Lfx-Vj-hb5"/>
                         <outlet property="disagreeBoxHeight" destination="XmL-5X-42g" id="FQw-tL-itY"/>
                         <outlet property="disagreeLabel" destination="bL2-9t-hdk" id="BFf-hV-G8r"/>
@@ -524,7 +524,7 @@ spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen 
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="83" id="7dW-yg-ocs" customClass="U">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="83" id="7dW-yg-ocs" customClass="NewsTableViewCell" customModule="debatkamer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7dW-yg-ocs" id="dXE-fK-kJf">

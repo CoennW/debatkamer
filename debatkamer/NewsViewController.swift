@@ -29,8 +29,9 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        let count = 1
-        /*FeedParser(URL: url)?.parse({ (result) in
+        
+        var count = 0
+        FeedParser(URL: url)?.parse({ (result) in
             
             guard let feed = result.rssFeed, result.isSuccess else {
                 print(result.error!)
@@ -39,7 +40,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             count = (feed.items?.count)!
             
-        })*/
+        })
         return count
     }
     
@@ -74,11 +75,11 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                 return
             }
             
-            print(feed.title)                      // The feed's `Title`
-            print(feed.items?.count)               // The number of articles
-            print(feed.items?.first?.title)        // The feed's first article `Title`
-            print(feed.items?.first?.description)  // The feed's first article `Description`
-            print(feed.items?.first?.pubDate)      // The feed's first article `Publication Date`
+            print(feed.title ?? String())                     // The feed's `Title`
+            print(feed.items?.count ?? Int())               // The number of articles
+            print(feed.items?.first?.title ?? String())        // The feed's first article `Title`
+            print(feed.items?.first?.description ?? String())  // The feed's first article `Description`
+            print(feed.items?.first?.pubDate ?? String())      // The feed's first article `Publication Date`
             
         })
   
@@ -87,8 +88,20 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewsTableViewCell
-        cell.newsImage.image = UIImage(named: "CDA.png")
-        cell.newsTitle.text = ""
+        
+        
+        FeedParser(URL: url)?.parse({ (result) in
+            
+            guard let feed = result.rssFeed, result.isSuccess else {
+                print(result.error!)
+                return
+            }
+            
+            cell.newsImage.image = UIImage(named: "CDA.png")
+            cell.newsTitle.text = (feed.items?[indexPath.row].title)
+            
+        })
+
         return cell
     }
     /*

@@ -13,10 +13,8 @@ class votingBehaviorVC: UIViewController {
 
     
 
-    
-    
-    
     @IBOutlet weak var agreeBoxHeight: NSLayoutConstraint!
+    
     
     @IBOutlet weak var disagreeBoxHeight: NSLayoutConstraint!
    

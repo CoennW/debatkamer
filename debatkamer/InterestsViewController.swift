@@ -1,9 +1,9 @@
 //
-//  InterestsCollectionViewController.swift
-//  Interests
+//  InterestsViewController.swift
+//  debatkamer
 //
-//  Created by Duc Tran on 3/6/17.
-//  Copyright © 2017 Developer Inspirus. All rights reserved.
+//  Created by Ruud Slagers on 12/05/2017.
+//  Copyright © 2017 Ruud Slagers. All rights reserved.
 //
 
 import UIKit

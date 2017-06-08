@@ -95,13 +95,25 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print(result.error!)
                 return
             }
-            
-            cell.newsImage.image = UIImage(named: "CDA.png")
+            let imageUrlString = "https://images.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png"
+            let imageUrl:URL = URL(string: imageUrlString)!
+            let imageData:NSData = NSData(contentsOf: imageUrl)!
+            //UIImage(data: (caminhodaImagem as! NSData) as Data)
+            let image = UIImage(data: imageData as Data)
+            let df = DateFormatter()
+            df.dateFormat = "dd/MM/yyyy HH:mm"
+            let date = df.string(from: (feed.items?[indexPath.row].pubDate)!)
+            cell.newsImage.image = image
             cell.newsTitle.text = (feed.items?[indexPath.row].title)
+            cell.newsDate.text = date
             
         })
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
     /*
     // MARK: - Navigation

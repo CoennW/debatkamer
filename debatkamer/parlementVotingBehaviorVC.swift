@@ -10,7 +10,7 @@ import UIKit
 
 class parlementVotingBehaviorVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let partijen = ["VVD": ["33", "Voor"], "groenlinks": ["14", "Voor"], "PVV": ["20", "Voor"], "partijVoorDeDieren": ["5", "Voor"], "christenUnie": ["5", "Voor"], "d66": ["19", "Voor"], "CDA": ["19", "Voor"], "SP": ["14", "Voor"], "50plus": ["4", "Voor"], "denk": ["3", "Tegen"], "forumVoorDemocratie": ["2", "Tegen"]]
+    let partijen = ["VVD": ["33", "Voor"], "GroenLinks": ["14", "Voor"], "PVV": ["20", "Voor"], "Partij Voor De Dieren": ["5", "Voor"], "ChristenUnie": ["5", "Voor"], "D66": ["19", "Voor"], "CDA": ["19", "Voor"], "SP": ["14", "Voor"], "50plus": ["4", "Voor"], "DENK": ["3", "Tegen"], "Forum Voor Democratie": ["2", "Tegen"]]
     
     
     
@@ -36,7 +36,8 @@ class parlementVotingBehaviorVC: UIViewController, UITableViewDataSource, UITabl
         
         cell.myImage.image = UIImage(named: newPartijen[indexPath.row] + ".jpg")
         cell.voteLabel.text = voorTegen[indexPath.row][1]
-        cell.zetelLabel.text = zetelArray[indexPath.row][0]
+        cell.zetelLabel.text = zetelArray[indexPath.row][0] + " zetels"
+        cell.partyName.text = newPartijen[indexPath.row]
         
         if voorTegen[indexPath.row][1] == "Voor" {
             cell.backgroundColor = UIColor.green.withAlphaComponent(0.05)

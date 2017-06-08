@@ -10,6 +10,7 @@ import UIKit
 
 class ParlementTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var partyName: UILabel!
     @IBOutlet weak var zetelLabel: UILabel!
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var voteLabel: UILabel!

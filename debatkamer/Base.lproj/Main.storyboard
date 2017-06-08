@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Yjy-Qc-WPm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kg0-ZV-9xJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--PageVC-->
+        <!--Debatkamer-->
         <scene sceneID="P55-wg-ckj">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" title="PageVC" transitionStyle="scroll" pageSpacing="2" navigationOrientation="horizontal" spineLocation="none" id="sIK-D3-aNS" customClass="PageVC" customModule="debatkamer" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" title="Debatkamer" transitionStyle="scroll" pageSpacing="2" navigationOrientation="horizontal" spineLocation="none" id="sIK-D3-aNS" customClass="PageVC" customModule="debatkamer" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sv1-gF-ZSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="160"/>
+            <point key="canvasLocation" x="-377" y="107"/>
         </scene>
         <!--Login-->
         <scene sceneID="qnL-xu-4Ib">
@@ -30,39 +31,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-blauw" translatesAutoresizingMaskIntoConstraints="NO" id="llz-YK-25u">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-blauw" translatesAutoresizingMaskIntoConstraints="NO" id="llz-YK-25u">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inlog-btn" translatesAutoresizingMaskIntoConstraints="NO" id="p9I-0e-8Jw">
-                                <rect key="frame" x="74" y="310" width="240" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tekst-bg" translatesAutoresizingMaskIntoConstraints="NO" id="DUl-HF-bEc">
+                                <rect key="frame" x="52" y="134" width="271" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GXP-P0-Elf"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inloggen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ow2-5v-n8r">
-                                <rect key="frame" x="163" y="323" width="63" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tekst-bg" translatesAutoresizingMaskIntoConstraints="NO" id="g71-UV-oa5">
+                                <rect key="frame" x="52" y="208" width="271" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mIN-IZ-tNd"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wachtwoord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BVz-7N-rLv">
+                                <rect key="frame" x="71" y="208" width="252" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0ZB-AE-pTU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6g-3K-JA3">
+                                <rect key="frame" x="104" y="279" width="167" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="LJp-dP-dNS"/>
+                                    <constraint firstAttribute="height" constant="33" id="mUl-he-v36"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <state key="normal" title="Wachtwoord vergeten?">
+                                    <color key="titleColor" red="0.80392156862745101" green="0.80392156862745101" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inlog-btn" translatesAutoresizingMaskIntoConstraints="NO" id="p9I-0e-8Jw">
+                                <rect key="frame" x="52" y="354" width="271" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8sx-wL-8nS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inloggen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ow2-5v-n8r">
+                                <rect key="frame" x="157.5" y="362" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QkB-79-cfV"/>
+                                    <constraint firstAttribute="width" constant="60" id="TnK-NC-mzH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aanmaken-btn" translatesAutoresizingMaskIntoConstraints="NO" id="qYL-Hs-BTo">
-                                <rect key="frame" x="74" y="404" width="240" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P95-xR-Xx9" userLabel="Inloggen btn">
+                                <rect key="frame" x="68" y="356" width="239" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Dp7-R7-UZ1"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="signInTapped:" destination="Yjy-Qc-WPm" eventType="touchUpInside" id="diV-hV-e4x"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aanmaken-btn" translatesAutoresizingMaskIntoConstraints="NO" id="qYL-Hs-BTo">
+                                <rect key="frame" x="52" y="437" width="271" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kFd-cN-DXR"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account aanmaken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Eg-qd-gxV">
-                                <rect key="frame" x="126" y="415" width="136" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account aanmaken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Eg-qd-gxV">
+                                <rect key="frame" x="120.5" y="452" width="134" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="giV-zN-43N"/>
+                                    <constraint firstAttribute="height" constant="21" id="mG1-F0-mcv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tekst-bg" translatesAutoresizingMaskIntoConstraints="NO" id="DUl-HF-bEc">
-                                <rect key="frame" x="67" y="90" width="240" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gebruikersnaam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVE-D0-mnA">
-                                <rect key="frame" x="81" y="100" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gebruikersnaam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVE-D0-mnA">
+                                <rect key="frame" x="71" y="134" width="252" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JOp-d0-6Eo"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -70,51 +119,70 @@
                                     <action selector="signInTapped:" destination="Yjy-Qc-WPm" eventType="touchUpInside" id="jGJ-8G-mgv"/>
                                 </connections>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tekst-bg" translatesAutoresizingMaskIntoConstraints="NO" id="g71-UV-oa5">
-                                <rect key="frame" x="67" y="164" width="240" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wachtwoord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BVz-7N-rLv">
-                                <rect key="frame" x="81" y="174" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P95-xR-Xx9" userLabel="Inloggen btn">
-                                <rect key="frame" x="74" y="310" width="240" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="signInTapped:" destination="Yjy-Qc-WPm" eventType="touchUpInside" id="diV-hV-e4x"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-Nl-cJC" userLabel="Account btn">
-                                <rect key="frame" x="74" y="404" width="240" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-Nl-cJC" userLabel="Account btn">
+                                <rect key="frame" x="68" y="440" width="239" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="A7Q-BM-G3z"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="mFm-9b-D4z" kind="show" id="lVe-gS-mYB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6g-3K-JA3">
-                                <rect key="frame" x="102" y="235" width="171" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <state key="normal" title="Wachtwoord vergeten?">
-                                    <color key="titleColor" red="0.80392156862745101" green="0.80392156862745101" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NB1-Nl-cJC" secondAttribute="trailing" constant="52" id="2Lc-Mw-NYJ"/>
+                            <constraint firstItem="DUl-HF-bEc" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leading" constant="52" id="2is-Tf-MRU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P95-xR-Xx9" secondAttribute="trailing" constant="52" id="4ZU-Gb-E8C"/>
+                            <constraint firstItem="P95-xR-Xx9" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leadingMargin" constant="52" id="5Dw-1Z-l23"/>
+                            <constraint firstItem="P95-xR-Xx9" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="6ka-0F-pxy"/>
+                            <constraint firstItem="dVE-D0-mnA" firstAttribute="top" secondItem="o9z-k2-wET" secondAttribute="bottom" constant="70" id="8FO-k4-xn8"/>
+                            <constraint firstItem="p9I-0e-8Jw" firstAttribute="top" secondItem="N6g-3K-JA3" secondAttribute="bottom" constant="42" id="9bw-5B-vMJ"/>
+                            <constraint firstItem="dVE-D0-mnA" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leadingMargin" constant="55" id="9t3-9G-n06"/>
+                            <constraint firstItem="qYL-Hs-BTo" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="BKQ-pw-hV6"/>
+                            <constraint firstItem="NB1-Nl-cJC" firstAttribute="top" secondItem="P95-xR-Xx9" secondAttribute="bottom" constant="34" id="CKd-UT-Igq"/>
+                            <constraint firstItem="g71-UV-oa5" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leading" constant="52" id="EmU-wa-xmY"/>
+                            <constraint firstItem="g71-UV-oa5" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="IYx-Bk-DZk"/>
+                            <constraint firstItem="DUl-HF-bEc" firstAttribute="top" secondItem="o9z-k2-wET" secondAttribute="bottom" constant="70" id="MRJ-er-1eO"/>
+                            <constraint firstItem="qYL-Hs-BTo" firstAttribute="top" secondItem="P95-xR-Xx9" secondAttribute="bottom" constant="31" id="MxM-eI-LqB"/>
+                            <constraint firstItem="llz-YK-25u" firstAttribute="top" secondItem="nJJ-JZ-ya0" secondAttribute="top" id="OQb-NV-cU3"/>
+                            <constraint firstAttribute="trailing" secondItem="DUl-HF-bEc" secondAttribute="trailing" constant="52" id="OVe-jp-zL5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BVz-7N-rLv" secondAttribute="trailing" constant="36" id="OzB-ue-ZMV"/>
+                            <constraint firstItem="qYL-Hs-BTo" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leading" constant="52" id="ThP-K8-jQm"/>
+                            <constraint firstAttribute="trailing" secondItem="p9I-0e-8Jw" secondAttribute="trailing" constant="52" id="UBY-jR-20W"/>
+                            <constraint firstItem="BVz-7N-rLv" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leadingMargin" constant="55" id="Wcw-1O-TEC"/>
+                            <constraint firstItem="DUl-HF-bEc" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="Wsq-PT-K8a"/>
+                            <constraint firstItem="llz-YK-25u" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leading" id="Wwu-rj-INo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dVE-D0-mnA" secondAttribute="trailing" constant="36" id="X5f-lZ-KKS"/>
+                            <constraint firstItem="ow2-5v-n8r" firstAttribute="top" secondItem="N6g-3K-JA3" secondAttribute="bottom" constant="50" id="YxJ-4e-nIr"/>
+                            <constraint firstAttribute="trailing" secondItem="qYL-Hs-BTo" secondAttribute="trailing" constant="52" id="ZCs-J6-KmH"/>
+                            <constraint firstItem="g71-UV-oa5" firstAttribute="top" secondItem="dVE-D0-mnA" secondAttribute="bottom" constant="24" id="ceC-L6-W4v"/>
+                            <constraint firstItem="ow2-5v-n8r" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="d6A-Ih-ucK"/>
+                            <constraint firstItem="p9I-0e-8Jw" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="fAI-jn-PJE"/>
+                            <constraint firstItem="BVz-7N-rLv" firstAttribute="top" secondItem="dVE-D0-mnA" secondAttribute="bottom" constant="24" id="gJQ-3e-rvh"/>
+                            <constraint firstItem="0Eg-qd-gxV" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="kI6-Ey-8pj"/>
+                            <constraint firstItem="h3e-tD-VsW" firstAttribute="top" secondItem="llz-YK-25u" secondAttribute="bottom" id="kyr-UY-fhF"/>
+                            <constraint firstAttribute="trailing" secondItem="g71-UV-oa5" secondAttribute="trailing" constant="52" id="lRA-JQ-z71"/>
+                            <constraint firstItem="NB1-Nl-cJC" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="nA4-cl-hsI"/>
+                            <constraint firstItem="0Eg-qd-gxV" firstAttribute="top" secondItem="P95-xR-Xx9" secondAttribute="bottom" constant="46" id="nFP-gU-BOK"/>
+                            <constraint firstAttribute="trailing" secondItem="llz-YK-25u" secondAttribute="trailing" id="owV-FH-HCQ"/>
+                            <constraint firstItem="N6g-3K-JA3" firstAttribute="centerX" secondItem="nJJ-JZ-ya0" secondAttribute="centerX" id="pkd-aP-gLw"/>
+                            <constraint firstItem="p9I-0e-8Jw" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leading" constant="52" id="qpW-uR-h4A"/>
+                            <constraint firstItem="N6g-3K-JA3" firstAttribute="top" secondItem="BVz-7N-rLv" secondAttribute="bottom" constant="21" id="x9J-dz-YiT"/>
+                            <constraint firstItem="NB1-Nl-cJC" firstAttribute="leading" secondItem="nJJ-JZ-ya0" secondAttribute="leadingMargin" constant="52" id="xcu-6R-Mlw"/>
+                            <constraint firstItem="P95-xR-Xx9" firstAttribute="top" secondItem="N6g-3K-JA3" secondAttribute="bottom" constant="44" id="xoE-k5-Lfo"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Debatkamer" id="CdK-zP-hFA"/>
                     <connections>
                         <outlet property="emailField" destination="dVE-D0-mnA" id="P6y-5q-74z"/>
                         <outlet property="pwdField" destination="BVz-7N-rLv" id="xXf-R3-xI0"/>
-                        <segue destination="QEQ-Tg-Q5N" kind="show" identifier="GoToStemmen" id="Ih9-OW-XQP"/>
+                        <segue destination="k60-wP-oXl" kind="show" identifier="GoToStemmen" id="Ih9-OW-XQP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7v-mS-PlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-399" y="821"/>
+            <point key="canvasLocation" x="602" y="845"/>
         </scene>
         <!--Account aanmaken-->
         <scene sceneID="fpQ-JD-A8m">
@@ -147,13 +215,6 @@
                                 <rect key="frame" x="67" y="208" width="240" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gebruikersnaam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FJa-Fz-H5x">
-                                <rect key="frame" x="81" y="218" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tekst-bg" translatesAutoresizingMaskIntoConstraints="NO" id="LUs-ze-Eqf">
                                 <rect key="frame" x="67" y="284" width="240" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -180,8 +241,8 @@
                                 <rect key="frame" x="67" y="589" width="240" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inloggen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdS-Gs-vmo">
-                                <rect key="frame" x="156" y="602" width="63" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registreren" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdS-Gs-vmo">
+                                <rect key="frame" x="146" y="602" width="81" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -198,25 +259,25 @@
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZL1-8E-Nqj">
-                                <rect key="frame" x="67" y="593" width="240" height="42"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gebruikersnaam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FJa-Fz-H5x">
+                                <rect key="frame" x="74" y="218" width="226" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="ly9-cn-bnZ" kind="show" id="di4-9Q-yni"/>
-                                </connections>
-                            </button>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bfq-iu-BV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="375" y="821"/>
+            <point key="canvasLocation" x="1512.8" y="844.22788605697156"/>
         </scene>
         <!--Stemgedrag gebruikers-->
         <scene sceneID="QZM-d9-GrY">
             <objects>
-                <viewController restorationIdentifier="FirstVC" storyboardIdentifier="FirstVC" title="Stemgedrag gebruikers" id="VhZ-FL-nlM" sceneMemberID="viewController">
+                <viewController restorationIdentifier="FirstVC" storyboardIdentifier="FirstVC" title="Stemgedrag gebruikers" id="VhZ-FL-nlM" customClass="votingBehaviorVC" customModule="debatkamer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sDM-oL-RR8"/>
                         <viewControllerLayoutGuide type="bottom" id="Mnq-j4-UX2"/>
@@ -225,25 +286,121 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stemgedrag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAx-Tu-aGY">
-                                <rect key="frame" x="133" y="323" width="108" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-blauw" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-Ri-scP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7b-vc-NpI">
+                                <rect key="frame" x="67" y="529" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aantal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL2-9t-hdk">
+                                <rect key="frame" x="213" y="496" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aantal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xz2-fC-fXz">
+                                <rect key="frame" x="67" y="496" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oneens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLZ-H7-plh">
+                                <rect key="frame" x="213" y="529" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Debatkamer stemde over de motie:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAx-Tu-aGY">
+                                <rect key="frame" x="48" y="66" width="278" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAr-CJ-dOM">
+                                <rect key="frame" x="29" y="140" width="316" height="311"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <string key="text">De Kamer,
+ 
+Gehoord de beraadslaging, overwegende dat vooral aardbevingen en het risico daarop sturend zijn voor besluiten om de gaswinning terug te dringen;
+
+Overwegende dat deze benadering heeft geleid en blijft leiden tot een verhoogd veiligheidsrisico voor bewoners van gaswinningsgebieden;
+
+Overwegende dat dit zorgt voor aanzienlijke milieuschade en schade aan bebouwing, en grote financiële en emotionele schade voor bewoners tot gevolg heeft; 
+
+spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen en tussenstappen te realiseren, en gaat over tot de orde van de dag.</string>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cb-2b-BeN">
+                                <rect key="frame" x="162" y="459" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="urlButton:" destination="VhZ-FL-nlM" eventType="touchUpInside" id="SoI-ia-asM"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yBp-FU-t7m">
+                                <rect key="frame" x="29" y="459" width="40" height="208"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="SST-Y0-YoW"/>
+                                    <constraint firstAttribute="height" constant="208" id="xzV-uY-0In"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hlT-GK-aOa">
+                                <rect key="frame" x="305" y="459" width="40" height="208"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="208" id="XmL-5X-42g"/>
+                                    <constraint firstAttribute="width" constant="40" id="so4-Re-RB3"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mnq-j4-UX2" firstAttribute="top" secondItem="hlT-GK-aOa" secondAttribute="bottom" id="84a-fL-ddB"/>
+                            <constraint firstItem="Mnq-j4-UX2" firstAttribute="top" secondItem="yBp-FU-t7m" secondAttribute="bottom" id="SYh-bS-bQl"/>
+                            <constraint firstItem="yBp-FU-t7m" firstAttribute="leading" secondItem="ot0-hV-7Ye" secondAttribute="leadingMargin" constant="13" id="gR6-Os-IdD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hlT-GK-aOa" secondAttribute="trailing" constant="14" id="yBh-jK-iFr"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Stemgedrag Debatkamer" id="zXC-Zv-Vh9"/>
+                    <connections>
+                        <outlet property="AgreeBoxHeight" destination="xzV-uY-0In" id="bh6-Zv-DU7"/>
+                        <outlet property="agreeLabel" destination="xz2-fC-fXz" id="Lfx-Vj-hb5"/>
+                        <outlet property="disagreeBoxHeight" destination="XmL-5X-42g" id="FQw-tL-itY"/>
+                        <outlet property="disagreeLabel" destination="bL2-9t-hdk" id="BFf-hV-G8r"/>
+                        <outlet property="eensBlock" destination="yBp-FU-t7m" id="Qjy-zN-Ow1"/>
+                        <outlet property="textViewMotie" destination="nAr-CJ-dOM" id="a7O-Hl-AVg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLi-9q-jwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496.80000000000001" y="156.97151424287858"/>
+            <point key="canvasLocation" x="1512.8" y="106.59670164917542"/>
         </scene>
         <!--Stemgedrag tweede kamer-->
         <scene sceneID="UJQ-Mp-RLm">
             <objects>
-                <viewController restorationIdentifier="SecondVC" storyboardIdentifier="SecondVC" title="Stemgedrag tweede kamer" id="584-6S-2Ep" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SecondVC" storyboardIdentifier="SecondVC" title="Stemgedrag tweede kamer" id="584-6S-2Ep" customClass="parlementVotingBehaviorVC" customModule="debatkamer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tbf-Vg-atK"/>
                         <viewControllerLayoutGuide type="bottom" id="K9s-op-i48"/>
@@ -252,20 +409,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stemgedrag tweede kamer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnS-zW-Man">
-                                <rect key="frame" x="74" y="321" width="226" height="24"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-blauw" translatesAutoresizingMaskIntoConstraints="NO" id="uD8-nE-BZU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stemgedrag tweede kamer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnS-zW-Man">
+                                <rect key="frame" x="74.5" y="20" width="226" height="24"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="118" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0WE-eZ-E64">
+                                <rect key="frame" x="0.0" y="52" width="375" height="615"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="118" id="iS0-Zd-kl4" customClass="ParlementTableViewCell" customModule="debatkamer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="118"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iS0-Zd-kl4" id="3Jv-dT-PgX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sxl-Qa-Lm7">
+                                                    <rect key="frame" x="14" y="13" width="140" height="88"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="sxl-Qa-Lm7" secondAttribute="height" multiplier="25:16" constant="2.5" id="NWx-B3-2vW"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zetels:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHI-ET-wCg">
+                                                    <rect key="frame" x="190" y="62" width="52" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stem:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XX9-pn-dYU">
+                                                    <rect key="frame" x="190" y="30" width="45" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="33" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Els-0g-vgp">
+                                                    <rect key="frame" x="270" y="62" width="86" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7c-YN-UtK">
+                                                    <rect key="frame" x="270" y="30" width="86" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sxl-Qa-Lm7" firstAttribute="top" secondItem="3Jv-dT-PgX" secondAttribute="top" constant="13" id="3Rg-Nf-g5j"/>
+                                                <constraint firstItem="sxl-Qa-Lm7" firstAttribute="leading" secondItem="3Jv-dT-PgX" secondAttribute="leading" constant="14" id="UZ4-8g-Mgw"/>
+                                                <constraint firstAttribute="bottom" secondItem="sxl-Qa-Lm7" secondAttribute="bottom" constant="16" id="rwu-A1-V4S"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="myImage" destination="sxl-Qa-Lm7" id="E10-VH-DTW"/>
+                                            <outlet property="voteLabel" destination="N7c-YN-UtK" id="AoZ-HV-eAs"/>
+                                            <outlet property="zetelLabel" destination="Els-0g-vgp" id="WFR-oo-9QU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="584-6S-2Ep" id="JFw-nN-p4r"/>
+                                    <outlet property="delegate" destination="584-6S-2Ep" id="dEn-c1-Y2S"/>
+                                </connections>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.20392156859999999" green="0.66274509800000003" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NnS-zW-Man" firstAttribute="top" secondItem="Tbf-Vg-atK" secondAttribute="bottom" id="R7n-zP-QgL"/>
+                            <constraint firstItem="NnS-zW-Man" firstAttribute="centerX" secondItem="hVa-yN-fTe" secondAttribute="centerX" id="s9o-te-sSe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zsF-1R-GKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1138" y="158"/>
+            <point key="canvasLocation" x="2276" y="106.59670164917542"/>
         </scene>
         <!--Nieuwsberichten-->
         <scene sceneID="SSd-VK-qBn">
@@ -279,8 +508,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-blauw" translatesAutoresizingMaskIntoConstraints="NO" id="WDM-gB-Aq0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nieuws artikelen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAb-Pa-dRn">
-                                <rect key="frame" x="117" y="321" width="140" height="24"/>
+                                <rect key="frame" x="124" y="20" width="140" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -292,36 +525,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqf-hT-aaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782" y="160"/>
-        </scene>
-        <!--Feed Table View Controller-->
-        <scene sceneID="01I-OW-bwY">
-            <objects>
-                <tableViewController id="ZAB-9M-D41" customClass="FeedTableViewController" customModule="debatkamer" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="KsZ-ty-Aha">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="yYk-SL-kwl">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yYk-SL-kwl" id="dTq-MU-Ecw">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ZAB-9M-D41" id="vWW-Ij-AYH"/>
-                            <outlet property="delegate" destination="ZAB-9M-D41" id="QOi-6x-uJf"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="JpU-ZX-aVL"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uIW-SC-oZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3634.4000000000001" y="156.97151424287858"/>
+            <point key="canvasLocation" x="3016.8000000000002" y="106.59670164917542"/>
         </scene>
         <!--Tutorial-->
         <scene sceneID="gJV-kw-bSa">
@@ -354,7 +558,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InterestCell" id="Gry-FF-jzj" customClass="InterestCollectionViewCell" customModule="debatkamer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="46.5" width="200" height="400"/>
+                                        <rect key="frame" x="0.0" y="47" width="200" height="400"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="400"/>
@@ -417,7 +621,7 @@
                                 <rect key="frame" x="0.0" y="611" width="375" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="QEQ-Tg-Q5N" kind="show" id="AKv-F7-5MU"/>
+                                    <segue destination="k60-wP-oXl" kind="show" id="AKv-F7-5MU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -438,7 +642,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EWr-W0-Uka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1092" y="821"/>
+            <point key="canvasLocation" x="2264.8000000000002" y="845.1274362818591"/>
         </scene>
         <!--Stemmen-->
         <scene sceneID="Erq-wC-chw">
@@ -456,82 +660,128 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpP-9u-8Eq">
-                                <rect key="frame" x="47" y="587" width="120" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpP-9u-8Eq" customClass="MooieBtn" customModule="debatkamer" customModuleProvider="target">
+                                <rect key="frame" x="47" y="562" width="120" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="5qO-ox-RdD"/>
+                                    <constraint firstAttribute="width" constant="120" id="AFe-gm-yRp"/>
+                                </constraints>
                                 <state key="normal" title="Eens" backgroundImage="aandeslag">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="agreeButtonTapped:" destination="QEQ-Tg-Q5N" eventType="touchUpInside" id="QUG-yY-yAr"/>
                                     <segue destination="sIK-D3-aNS" kind="show" id="IQH-Je-vAW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI0-DL-mEN">
-                                <rect key="frame" x="212" y="587" width="120" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI0-DL-mEN" customClass="MooieBtn" customModule="debatkamer" customModuleProvider="target">
+                                <rect key="frame" x="212" y="562" width="120" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="RnR-dg-4uA"/>
+                                    <constraint firstAttribute="height" constant="42" id="uvM-0Q-HiN"/>
+                                </constraints>
                                 <state key="normal" title="Oneens" backgroundImage="aandeslag">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="disagreeButtonTapped:" destination="QEQ-Tg-Q5N" eventType="touchUpInside" id="jhK-fF-EoB"/>
                                     <segue destination="sIK-D3-aNS" kind="show" id="RP6-2D-PDK"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9nT-DO-RYD">
-                                <rect key="frame" x="16" y="263" width="343" height="281"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0e-ja-SRs">
-                                <rect key="frame" x="164" y="175" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log uit"/>
-                                <connections>
-                                    <action selector="signOutTapped:" destination="QEQ-Tg-Q5N" eventType="touchUpInside" id="LI0-rZ-Bq5"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stemming:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uz-UK-Kom">
-                                <rect key="frame" x="59" y="80" width="256" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DE MOTIE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uz-UK-Kom">
+                                <rect key="frame" x="0.0" y="96" width="375" height="22"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                <color key="textColor" red="0.08078204314720816" green="0.08078204314720816" blue="0.08078204314720816" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nT-DO-RYD">
+                                <rect key="frame" x="29" y="178" width="316" height="311"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <string key="text">De Kamer,
+ 
+Gehoord de beraadslaging, overwegende dat vooral aardbevingen en het risico daarop sturend zijn voor besluiten om de gaswinning terug te dringen;
+
+Overwegende dat deze benadering heeft geleid en blijft leiden tot een verhoogd veiligheidsrisico voor bewoners van gaswinningsgebieden;
+
+Overwegende dat dit zorgt voor aanzienlijke milieuschade en schade aan bebouwing, en grote financiële en emotionele schade voor bewoners tot gevolg heeft; 
+
+spreekt de wens uit om een afbouwplan voor de gaswinning met duidelijke stappen en tussenstappen te realiseren, en gaat over tot de orde van de dag.</string>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6uz-UK-Kom" firstAttribute="leading" secondItem="E5u-he-KcM" secondAttribute="leading" id="3mQ-1N-UTo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9nT-DO-RYD" secondAttribute="trailing" constant="14" id="AwI-Rs-ACJ"/>
+                            <constraint firstItem="eI0-DL-mEN" firstAttribute="top" secondItem="9nT-DO-RYD" secondAttribute="bottom" constant="73" id="B0y-OL-oyx"/>
+                            <constraint firstItem="9nT-DO-RYD" firstAttribute="centerX" secondItem="E5u-he-KcM" secondAttribute="centerX" id="CSk-kK-jtL"/>
+                            <constraint firstItem="IpP-9u-8Eq" firstAttribute="top" secondItem="9nT-DO-RYD" secondAttribute="bottom" constant="73" id="ECf-UE-0Gl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eI0-DL-mEN" secondAttribute="trailing" constant="27" id="WE2-e6-HSq"/>
+                            <constraint firstItem="9nT-DO-RYD" firstAttribute="top" secondItem="6uz-UK-Kom" secondAttribute="bottom" constant="60" id="dxn-rb-Kbd"/>
+                            <constraint firstItem="9nT-DO-RYD" firstAttribute="centerY" secondItem="E5u-he-KcM" secondAttribute="centerY" id="egI-GK-1Jb"/>
+                            <constraint firstItem="9nT-DO-RYD" firstAttribute="leading" secondItem="E5u-he-KcM" secondAttribute="leadingMargin" constant="13" id="hoZ-la-ZTh"/>
+                            <constraint firstItem="6uz-UK-Kom" firstAttribute="top" secondItem="AXw-v0-Afw" secondAttribute="bottom" constant="32" id="icm-52-GEP"/>
+                            <constraint firstAttribute="trailing" secondItem="6uz-UK-Kom" secondAttribute="trailing" id="krO-GF-aG5"/>
+                            <constraint firstItem="IpP-9u-8Eq" firstAttribute="leading" secondItem="E5u-he-KcM" secondAttribute="leadingMargin" constant="31" id="pmN-Zn-ino"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Stemmen" id="2eq-eb-l8t">
+                        <barButtonItem key="leftBarButtonItem" image="00000000-logout" id="GHl-05-u0r">
+                            <connections>
+                                <action selector="uitloggenTapped:" destination="QEQ-Tg-Q5N" id="gt0-Ms-e4T"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textViewMotie" destination="9nT-DO-RYD" id="iqe-um-v7d"/>
-                        <segue destination="Yjy-Qc-WPm" kind="show" identifier="GoToSignIn" id="rYU-F5-f2E"/>
+                        <segue destination="Kg0-ZV-9xJ" kind="show" identifier="GoToSignIn" id="rYU-F5-f2E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XH-ot-DhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2246" y="821"/>
+            <point key="canvasLocation" x="3806" y="857"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="9iO-Q6-tiV">
+        <scene sceneID="fvK-aT-BLm">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tFp-s1-nPr" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k60-wP-oXl" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xUa-1Y-zYj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Cz-3u-Guy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ZAB-9M-D41" kind="relationship" relationship="rootViewController" id="53A-Pl-R6V"/>
+                        <segue destination="QEQ-Tg-Q5N" kind="relationship" relationship="rootViewController" id="uhz-kB-Ozi"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sj7-tL-W8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hjp-4S-1VF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2870" y="157"/>
+            <point key="canvasLocation" x="3016.8000000000002" y="856.82158920539734"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qb5-Tn-UAr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kg0-ZV-9xJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ALm-tC-0sG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yjy-Qc-WPm" kind="relationship" relationship="rootViewController" id="4C7-c9-PaB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZI9-Yt-4oH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258.39999999999998" y="844.22788605697156"/>
         </scene>
     </scenes>
     <resources>
+        <image name="00000000-logout" width="24" height="24"/>
         <image name="aandeslag" width="1080" height="160"/>
         <image name="aanmaken-btn" width="800" height="140"/>
         <image name="bg-blauw" width="750" height="1334"/>
@@ -540,7 +790,7 @@
         <image name="tekst-bg" width="800" height="140"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AKv-F7-5MU"/>
-        <segue reference="RP6-2D-PDK"/>
+        <segue reference="IQH-Je-vAW"/>
+        <segue reference="Ih9-OW-XQP"/>
     </inferredMetricsTieBreakers>
 </document>

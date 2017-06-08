@@ -9,13 +9,24 @@
 import UIKit
 import Firebase
 import SwiftKeychainWrapper
+import FirebaseDatabase
 
 class VotePageVC: UIViewController {
 
     @IBOutlet weak var textViewMotie: UITextView!
+    var ref: DatabaseReference?
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        ref = Database.database().reference()
+        
+        
         
         super.viewDidLoad()
         textViewMotie.layer.cornerRadius = 5
@@ -25,15 +36,60 @@ class VotePageVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func signOutTapped(_ sender: Any) {
+    @IBAction func agreeButtonTapped(_ sender: Any) {
         
+        
+        
+        //huidig aantal stemmen ophalen
+        ref?.child("stelling").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            
+            let totalVotes = snapshot.childSnapshot(forPath: "eens").value as! String
+            print(totalVotes)
+            
+            var newTotalVotes = Int(totalVotes)!
+            newTotalVotes = newTotalVotes + 1
+            let newStringTotalVotes = String(describing: newTotalVotes)
+            
+            
+            //Naar firebase schrijven
+            self.ref?.child("stelling").child("eens").setValue("\(newStringTotalVotes)")
+            
+        })
+        
+        
+        
+    }
+    
+    @IBAction func disagreeButtonTapped(_ sender: Any) {
+        
+        ///huidig aantal stemmen ophalen
+        ref?.child("stelling").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            
+            let totalVotes = snapshot.childSnapshot(forPath: "oneens").value as! String
+            print(totalVotes)
+            
+            var newTotalVotes = Int(totalVotes)!
+            newTotalVotes = newTotalVotes + 1
+            let newStringTotalVotes = String(describing: newTotalVotes)
+            
+            
+            //Naar firebase schrijven
+            self.ref?.child("stelling").child("oneens").setValue("\(newStringTotalVotes)")
+            
+        })
+        
+    }
+    
+    // Uitloggen - ga naar inlog pagina
+    @IBAction func uitloggenTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.remove(key: KEY_UID)
         print("ADMIN: ID verwijderd van keychain \(keychainResult)")
         try! Auth.auth().signOut()
         performSegue(withIdentifier: "GoToSignIn", sender: nil)
-        
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

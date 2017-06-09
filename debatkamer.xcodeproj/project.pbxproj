@@ -25,6 +25,13 @@
 		2BFD15C71EE17BF500ABE75B /* MooieBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD15C61EE17BF500ABE75B /* MooieBtn.swift */; };
 		DB979F3EDB224B847439584C /* Pods_debatkamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBFC775A51D71E7FAF7FDBF /* Pods_debatkamer.framework */; };
 		ECE5F9948BB4DF8483B10C19 /* Pods_debatkamerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCDAC5EDD81EC9C2F59DB5C /* Pods_debatkamerUITests.framework */; };
+		F50303FB1EEA8BBF0035A876 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50303F51EEA8BBF0035A876 /* image1.jpg */; };
+		F50303FC1EEA8BBF0035A876 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50303F61EEA8BBF0035A876 /* image2.jpg */; };
+		F50303FD1EEA8BBF0035A876 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50303F71EEA8BBF0035A876 /* image3.jpg */; };
+		F50303FE1EEA8BBF0035A876 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50303F81EEA8BBF0035A876 /* image4.jpg */; };
+		F50303FF1EEA8BBF0035A876 /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50303F91EEA8BBF0035A876 /* image5.jpg */; };
+		F50304001EEA8BBF0035A876 /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50303FA1EEA8BBF0035A876 /* image6.jpg */; };
+		F5146FDE1EE9EA99009CBB97 /* newsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146FDD1EE9EA99009CBB97 /* newsDetailViewController.swift */; };
 		F5400EF61ECF145500612A42 /* VotePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5400EF51ECF145500612A42 /* VotePageVC.swift */; };
 		F5400EF81ECF252700612A42 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5400EF71ECF252700612A42 /* FeedTableViewController.swift */; };
 		F5431A941EE07D9D007C68E3 /* votingBehaviorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5431A931EE07D9D007C68E3 /* votingBehaviorVC.swift */; };
@@ -82,6 +89,13 @@
 		D19DC4762DA744B9C816EB92 /* Pods-debatkamerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debatkamerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-debatkamerUITests/Pods-debatkamerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EBBFC775A51D71E7FAF7FDBF /* Pods_debatkamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_debatkamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCDAC5EDD81EC9C2F59DB5C /* Pods_debatkamerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_debatkamerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50303F51EEA8BBF0035A876 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpg; path = ../../imagesDebatkamer/image1.jpg; sourceTree = "<group>"; };
+		F50303F61EEA8BBF0035A876 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image2.jpg; path = ../../imagesDebatkamer/image2.jpg; sourceTree = "<group>"; };
+		F50303F71EEA8BBF0035A876 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image3.jpg; path = ../../imagesDebatkamer/image3.jpg; sourceTree = "<group>"; };
+		F50303F81EEA8BBF0035A876 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image4.jpg; path = ../../imagesDebatkamer/image4.jpg; sourceTree = "<group>"; };
+		F50303F91EEA8BBF0035A876 /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image5.jpg; path = ../../imagesDebatkamer/image5.jpg; sourceTree = "<group>"; };
+		F50303FA1EEA8BBF0035A876 /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image6.jpg; path = ../../imagesDebatkamer/image6.jpg; sourceTree = "<group>"; };
+		F5146FDD1EE9EA99009CBB97 /* newsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newsDetailViewController.swift; sourceTree = "<group>"; };
 		F5400EF51ECF145500612A42 /* VotePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotePageVC.swift; sourceTree = "<group>"; };
 		F5400EF71ECF252700612A42 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		F5400EF91ECF260800612A42 /* debatkamer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "debatkamer-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -158,9 +172,16 @@
 				2B69E0831ECEEE12007C51C5 /* AppDelegate.swift */,
 				F5400EF71ECF252700612A42 /* FeedTableViewController.swift */,
 				2B83CBC41EC5B07F00D04D5F /* Main.storyboard */,
+				F5146FDD1EE9EA99009CBB97 /* newsDetailViewController.swift */,
 				F5754AC41EE9466C00AFC100 /* NewsViewController.swift */,
 				F5754AC61EE94AFE00AFC100 /* NewsTableViewCell.swift */,
 				F5431A9D1EE157BE007C68E3 /* ParlementTableViewCell.swift */,
+				F50303F51EEA8BBF0035A876 /* image1.jpg */,
+				F50303F61EEA8BBF0035A876 /* image2.jpg */,
+				F50303F71EEA8BBF0035A876 /* image3.jpg */,
+				F50303F81EEA8BBF0035A876 /* image4.jpg */,
+				F50303F91EEA8BBF0035A876 /* image5.jpg */,
+				F50303FA1EEA8BBF0035A876 /* image6.jpg */,
 				2B83CBC71EC5B07F00D04D5F /* Assets.xcassets */,
 				2B83CBC91EC5B07F00D04D5F /* LaunchScreen.storyboard */,
 				F5431A931EE07D9D007C68E3 /* votingBehaviorVC.swift */,
@@ -372,9 +393,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50303FE1EEA8BBF0035A876 /* image4.jpg in Resources */,
+				F50303FF1EEA8BBF0035A876 /* image5.jpg in Resources */,
 				2B83CBCB1EC5B07F00D04D5F /* LaunchScreen.storyboard in Resources */,
+				F50303FB1EEA8BBF0035A876 /* image1.jpg in Resources */,
 				2B69E0861ECEF6E5007C51C5 /* GoogleService-Info.plist in Resources */,
 				2B83CBC81EC5B07F00D04D5F /* Assets.xcassets in Resources */,
+				F50304001EEA8BBF0035A876 /* image6.jpg in Resources */,
+				F50303FC1EEA8BBF0035A876 /* image2.jpg in Resources */,
+				F50303FD1EEA8BBF0035A876 /* image3.jpg in Resources */,
 				2B83CBC61EC5B07F00D04D5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +578,7 @@
 				2B69E0821ECEEE05007C51C5 /* PageVC.swift in Sources */,
 				2B83CBF41EC5C31E00D04D5F /* LoginVC.swift in Sources */,
 				F5431A941EE07D9D007C68E3 /* votingBehaviorVC.swift in Sources */,
+				F5146FDE1EE9EA99009CBB97 /* newsDetailViewController.swift in Sources */,
 				F5431A9E1EE157BE007C68E3 /* ParlementTableViewCell.swift in Sources */,
 				2B83CC121EC5F1AC00D04D5F /* InterestsViewController.swift in Sources */,
 				F5400EF61ECF145500612A42 /* VotePageVC.swift in Sources */,

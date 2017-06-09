@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import SwiftKeychainWrapper
+import FirebaseDatabase
+
 
 class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
@@ -25,9 +29,34 @@ class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewCo
         self.navigationItem.setHidesBackButton(true, animated: true)        
         self.dataSource = self
         self.delegate = self
+        
+        
+        //navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIImage(named:"00000000-logout.png"), target: self, action: #selector(addTapped))
+       // var image = UIImage(named: "00000000-logout.png")
+        
+        //image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        
+        //self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.plain, target: self, action: #selector(logoutTapped))
+        
+        
+        
+        
         if let firstVC = VCArr.first {
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
+            
+            
         }
+        
+    }
+    
+    func logoutTapped() {
+        
+        let keychainResult = KeychainWrapper.standard.remove(key: KEY_UID)
+        print("ADMIN: ID verwijderd van keychain \(keychainResult)")
+        try! Auth.auth().signOut()
+        performSegue(withIdentifier: "GoToSignIn", sender: nil)
+
+        
     }
     
     override func viewDidLayoutSubviews() {

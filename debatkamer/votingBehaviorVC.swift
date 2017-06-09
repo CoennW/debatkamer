@@ -43,10 +43,12 @@ class votingBehaviorVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Stemming Debatkamer"
         textViewMotie.layer.cornerRadius = 5
         textViewMotie.layer.borderColor = UIColor.gray.withAlphaComponent(0.5).cgColor
         textViewMotie.layer.borderWidth = 0.5
         textViewMotie.clipsToBounds = true
+        
         
         runAddVotes()
         //animateVotes()

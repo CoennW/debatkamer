@@ -30,7 +30,7 @@ class Interest
             Interest(title: "", featuredImage: UIImage(named: "stemmen-tutorial")!, color: UIColor(red: 204/255.0, green: 246/255.0, blue: 251/255.0, alpha: 0.1)),
             Interest(title: "", featuredImage: UIImage(named: "stemgedrag-tutorial")!, color: UIColor(red: 204/255.0, green: 246/255.0, blue: 251/255.0, alpha: 0.1)),
             Interest(title: "", featuredImage: UIImage(named: "stemgedrag-tweedekamer")!, color: UIColor(red: 204/255.0, green: 246/255.0, blue: 251/255.0, alpha: 0.1)),
-            Interest(title: "", featuredImage: UIImage(named: "f4")!, color: UIColor(red: 204/255.0, green: 246/255.0, blue: 251/255.0, alpha: 0.1)),
+            Interest(title: "", featuredImage: UIImage(named: "nieuwsberichten")!, color: UIColor(red: 204/255.0, green: 246/255.0, blue: 251/255.0, alpha: 0.1)),
             
 //            Interest(title: "Learn. Create. Contribute.", featuredImage: UIImage(named: "f5")!, color: UIColor(red: 245/255.0, green: 62/255.0, blue: 40/255.0, alpha: 0.8)),
 //            Interest(title: "Inspire, Instruct, and Empower People", featuredImage: UIImage(named: "f6")!, color: UIColor(red: 103/255.0, green: 217/255.0, blue: 87/255.0, alpha: 0.8)),

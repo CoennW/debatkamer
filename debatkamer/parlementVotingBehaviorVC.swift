@@ -56,6 +56,7 @@ class parlementVotingBehaviorVC: UIViewController, UITableViewDataSource, UITabl
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Stemming Tweedekamer"
 
         // Do any additional setup after loading the view.
     }
